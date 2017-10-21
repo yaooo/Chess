@@ -6,21 +6,19 @@ public abstract class Piece implements Cloneable {
 
 	boolean isWhite;
 	String type;
-	boolean hasMoved;
+//	boolean hasMoved;
 
 	
 	public Piece(String color) {
 		isWhite = color.equals("white");
 		type = null;
-		hasMoved = false;
+//		hasMoved = false;
 	}
 	
 	/**
 	 * isWhite()
 	 * Checks to see whether a piece is white, returns true if white
 	 * @return boolean
-	 * 
-	 * 
 	 */
 	public boolean isWhite() {
 		return isWhite;
@@ -31,22 +29,19 @@ public abstract class Piece implements Cloneable {
 	 * Checks to see whether a piece has moved previous, returns true if yes
 	 * @return boolean
 	 * 
-	 * 
 	 */
-	public boolean hasMoved() {
-		return hasMoved;
-	}
-	
-	/**
-	 * moved()
-	 * Updates hasMoved boolean as true to indicated a piece has moved
-	 * @return void
-	 * 
-	 * 
-	 */
-	public void moved() {
-		hasMoved = true;
-	}
+//	public boolean hasMoved() {
+//		return hasMoved;
+//	}
+//	
+//	/**
+//	 * moved()
+//	 * Updates hasMoved boolean as true to indicated a piece has moved
+//	 * @return void
+//	 */
+//	public void moved() {
+//		hasMoved = true;
+//	}
 	
 	/**
 	 * testForCheck()
@@ -63,18 +58,17 @@ public abstract class Piece implements Cloneable {
 		return false;
 	}
 	
-	/**
-	 * getEnemyKingLocation()
-	 * Gets string of enemy kings location
-	 * @return string
-	 * 
-	 * 
-	 */
-	
-	public String getEnemyKingLocation(Square[][] board, String currentColor) {
-		String location = "";
-		return location;
-	}
+//	/**
+//	 * getEnemyKingLocation()
+//	 * Gets string of enemy kings location
+//	 * @return string
+//	 * 
+//	 * 
+//	 */
+//	public String getEnemyKingLocation(Square[][] board, String currentColor) {
+//		String location = "";
+//		return location;
+//	}
 	
 	/**
 	 * isValidMove
@@ -105,7 +99,6 @@ public abstract class Piece implements Cloneable {
 	/**
 	 * getEnpassant()
 	 * @return boolean
-	 * 
 	 * Returns boolean indicating whether this piece can be captured by enpassant
 	 */
 	public boolean getEnpassant()
@@ -117,12 +110,12 @@ public abstract class Piece implements Cloneable {
 	    return super.clone();
 	}
 	
-	/**
-	 * setHasMoved
-	 * @param m  true if has moved, else false
-	 */
-	public void setHasMoved(boolean m) {
-		hasMoved = m;
-	}
-	
+//	/**
+//	 * setHasMoved
+//	 * @param m  true if has moved, else false
+//	 */
+//	public void setHasMoved(boolean m) {
+//		hasMoved = m;
+//	}
+//	
 }
