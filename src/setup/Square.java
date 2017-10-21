@@ -50,6 +50,9 @@ public class Square implements Cloneable {
 	 */
 	public String getPieceType()
 	{
+		if(occupyingPiece==null) {
+			return null;
+		}
 		switch(occupyingPiece.type)
 		{
 			case "rook":

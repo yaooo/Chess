@@ -1,9 +1,11 @@
 package setup;
 
 public class Bishop extends Piece {
-
+	
+	
 	public Bishop(String color) {
 		super(color);
+		type="bishop";
 		// TODO Auto-generated constructor stub
 	}
 

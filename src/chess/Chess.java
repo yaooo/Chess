@@ -1,5 +1,5 @@
 package chess;
-
+import setup.*;
 /**
  * @author Sagar Patel
  * @author Yao Shi
@@ -8,6 +8,8 @@ package chess;
 
 public class Chess {
 	public static void main(String[] args) {
-			System.out.println("no implentation ready yet");
+			Board b = new Board();
+			b.initBoard();
+			b.printBoard();
 	}
 }
