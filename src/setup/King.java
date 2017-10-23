@@ -7,7 +7,7 @@ public class King extends Piece {
         type="king";
     }
     @Override
-    public boolean isValidMove(String input, Square[][] board) {
+    public boolean isValidMove(String start,String input, Board board) {
         // TODO Auto-generated method stub
         return false;
     }

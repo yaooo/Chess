@@ -4,11 +4,12 @@ public class Bishop extends Piece {
 
 	public Bishop(String color) {
 		super(color);
+		type="bishop";
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public boolean isValidMove(String input, Square[][] board) {
+	public boolean isValidMove(String start,String input, Board board) {
 		// TODO Auto-generated method stub
 		return false;
 	}

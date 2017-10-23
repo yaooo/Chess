@@ -1,5 +1,4 @@
 package setup;
-
 /**
  * @author Sagar Patel
  * @author Yao Shi
@@ -9,7 +8,7 @@ package setup;
 
 public class Board {
 
-	private Square[][] board;
+	Square[][] board;
 
 	public Board() {
 		this.board = new Square[8][8];
@@ -135,6 +134,8 @@ public class Board {
 	}
 
 	public void printBoard(){
+
+		int Vaxis=8;
 		for(int i=0;i<board.length;i++) {
 			for(int j=0;j<board[i].length;j++) {
 				if(board[i][j].getPieceType()==null){
@@ -149,7 +150,82 @@ public class Board {
 					System.out.print(board[i][j].toString()+" ");
 				}
 			}
+			System.out.print(Vaxis);
+			Vaxis--;
 			System.out.println("");
 		}
+		System.out.println(" a  b  c  d  e  f  g  h");
+	}
+
+	public Square getSquare(String pos) {
+		String temp=pos.charAt(1)+"";
+		int k=99;
+		int q=99;
+		k=getX(pos.charAt(0));
+		q=getY(Integer.parseInt(temp));
+		return board[q][k];
+		
+	}
+
+	public int getX (char i) {
+		int k=99;
+		switch(i) {
+		case 'a':
+			k=0;
+			break;
+		case 'b':
+			k=1;
+			break;
+		case 'c':
+			k=2;
+			break;
+		case 'd':
+			k=3;
+			break;
+		case 'e':
+			k=4;
+			break;
+		case 'f':
+			k=5;
+			break;
+		case 'g':
+			k=6;
+			break;
+		case 'h':
+			k=7;
+			break;
+		}
+			return k;
+	
+	}
+	public int getY(int j) {
+		int q=99;
+		switch(j) {
+		case 8:
+			q=0;
+			break;
+		case 7:
+			q=1;
+			break;
+		case 6:
+			q=2;
+			break;
+		case 5:
+			q=3;
+			break;
+		case 4:
+			q=4;
+			break;
+		case 3:
+			q=5;
+			break;
+		case 2:
+			q=6;
+			break;
+		case 1:
+			q=7;
+			break;
+		}
+		return q;
 	}
 }

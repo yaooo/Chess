@@ -6,13 +6,13 @@ public abstract class Piece implements Cloneable {
 
 	boolean isWhite;
 	String type;
-//	boolean hasMoved;
+	boolean hasMoved;
 
 	
 	public Piece(String color) {
 		isWhite = color.equals("white");
 		type = null;
-//		hasMoved = false;
+		hasMoved = false;
 	}
 	
 	/**
@@ -29,7 +29,7 @@ public abstract class Piece implements Cloneable {
 	 * Checks to see whether a piece has moved previous, returns true if yes
 	 * @return boolean
 	 * 
-	 */
+	 
 //	public boolean hasMoved() {
 //		return hasMoved;
 //	}
@@ -76,7 +76,7 @@ public abstract class Piece implements Cloneable {
 	 * @param board
 	 * @return if the move is valid
 	 */
-	public abstract boolean isValidMove(String input, Square[][] board);
+	public abstract boolean isValidMove(String start,String input, Board board);
 	
 	/**
 	 * @param input

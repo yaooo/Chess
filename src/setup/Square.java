@@ -37,6 +37,7 @@ public class Square implements Cloneable {
 		return occupyingPiece;
 	}
 
+	
 	/**
 	 * getPieceType()
 	 * @return String

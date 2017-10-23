@@ -11,5 +11,7 @@ public class Chess {
 			Board b = new Board();
 			b.initBoard();
 			b.printBoard();
+			b.getSquare("a7").getPiece().isValidMove("a7","a6",b);
+			
 	}
 }
