@@ -4,9 +4,6 @@
     <list default="true" id="31b6db3a-4a2c-463c-be08-ebb03d2edeb6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chess/Chess.java" afterPath="$PROJECT_DIR$/src/chess/Chess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup/Board.java" afterPath="$PROJECT_DIR$/src/setup/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup/Movement.java" afterPath="$PROJECT_DIR$/src/setup/Movement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup/Pawn.java" afterPath="$PROJECT_DIR$/src/setup/Pawn.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/chess/Chess.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,8 +68,8 @@
       <file leaf-file-name="Movement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="374">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -644,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -653,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/src/chess/Chess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

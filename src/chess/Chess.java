@@ -13,7 +13,7 @@ public class Chess {
 			b.printBoard();
 
 
-		
+
 		System.out.println(Movement.hasPiecesInBetween("a6", "b6",b));
 		System.out.println(Movement.hasPiecesInBetween("a7", "b7",b));
 		System.out.println(Movement.hasPiecesInBetween("a7", "c7",b));
