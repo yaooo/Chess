@@ -14,9 +14,9 @@ public class Chess {
 
 
 
-		System.out.println(Movement.hasPiecesInBetween("a6", "b6",b));
-		System.out.println(Movement.hasPiecesInBetween("a7", "b7",b));
-		System.out.println(Movement.hasPiecesInBetween("a7", "c7",b));
+		System.out.println(Movement.hasPiecesInBetween("a6", "b7",b));
+		System.out.println(Movement.hasPiecesInBetween("a1", "c3",b));
+		System.out.println(Movement.hasPiecesInBetween("c3", "a5",b));
 
 
 		// i is rank, j is file

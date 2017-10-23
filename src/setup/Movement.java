@@ -2,6 +2,14 @@ package setup;
 
 public class Movement {
 
+    /**
+     * Assume the move and the inputs are valid, decide if there are pieces in between two locations
+     * Check vertically, horizontally, diagonally
+     * @param start The starting position
+     * @param destination   The finishing position
+     * @param chessBoard    The chess board
+     * @return If there are pieces in between two locations. If two locations are aborted, return true
+     */
 	public static boolean hasPiecesInBetween(String start, String destination, Board chessBoard) {
         int start_file = start.charAt(0) - 'a';
         int start_rank = start.charAt(1) - '1';
@@ -58,10 +66,34 @@ public class Movement {
         }
 
 
-            // check diagonally
+        // check diagonally, assume diff_file = diff_rank
         if (Math.abs(start_file - dest_file) == Math.abs(start_rank - dest_rank)) {
+            int distance = Math.abs(start_file - dest_file);
 
-
+            if(start_file < dest_file && start_rank < dest_rank){
+                for(int i = 1; i < distance; i++){
+                    if(board[start_rank+i][start_file+i].getPieceType() != null)
+                        return true;
+                }
+            }
+            if(start_file > dest_file && start_rank > dest_rank){
+                for(int i = 1; i < distance; i++){
+                    if(board[start_rank-i][start_file-i].getPieceType() != null)
+                        return true;
+                }
+            }
+            if(start_file < dest_file && start_rank > dest_rank){
+                for(int i = 1; i < distance; i++){
+                    if(board[start_rank-i][start_file+i].getPieceType() != null)
+                        return true;
+                }
+            }
+            if(start_file > dest_file && start_rank < dest_rank){
+                for(int i = 1; i < distance; i++){
+                    if(board[start_rank+i][start_file-i].getPieceType() != null)
+                        return true;
+                }
+            }
         }
 
 
