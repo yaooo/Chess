@@ -15,12 +15,12 @@ public class Pawn extends Piece  {
     	int endY=board.getY(Integer.parseInt(e));
     	Square startPos=board.getSquare(start);
     	Square inQuestion=board.getSquare(input);
-        if(hasMoved==false && startPos.getPieceColor().equals("w")) {
+        if(!hasMoved && startPos.getPieceColor().equals("w")) {
         	if((endY==startY-1 || endY==startY-2) && inQuestion.getPiece()==null) {
         			return true;
         	}
         }
-        else if(hasMoved==false && startPos.getPieceColor().equals("b")) {
+        else if(!hasMoved && startPos.getPieceColor().equals("b")) {
         	if((endY==startY+1 || endY==startY+2) && inQuestion.getPiece()==null) {
         			System.out.println("valid move");
         			return true;

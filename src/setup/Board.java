@@ -8,7 +8,7 @@ package setup;
 
 public class Board {
 
-	Square[][] board;
+	private Square[][] board;
 
 	public Board() {
 		this.board = new Square[8][8];
@@ -139,7 +139,7 @@ public class Board {
 		for(int i=0;i<board.length;i++) {
 			for(int j=0;j<board[i].length;j++) {
 				if(board[i][j].getPieceType()==null){
-					if(board[i][j].isSquareBlack()==true){
+					if(board[i][j].isSquareBlack()){
 						System.out.print("## ");
 					}
 					else {
@@ -165,6 +165,10 @@ public class Board {
 		q=getY(Integer.parseInt(temp));
 		return board[q][k];
 		
+	}
+
+	public Square[][] getBoard(){
+		return this.board;
 	}
 
 	public int getX (char i) {
