@@ -58,7 +58,22 @@ public class King extends Piece {
         board.getSquare(end).setPiece(this);
     }
 
-    public void Castling(String kingPos, String rookPos){
+    public Square[][] castling(String startKingPos, String endKingPos, Board board) {
+        int start_file = startKingPos.charAt(0) - 'a';
+        int start_rank = startKingPos.charAt(1) - '1';
+        int dest_file = endKingPos.charAt(0) - 'a';
+        int dest_rank = endKingPos.charAt(1) - '1';
+
+        Square[][] b = board.getBoard();
+
+        if(!this.hasMoved()){
+
+
+
+
+        }
+
+
         //TODO: has moved piece cannot do it
         //TODO: Add this to the validation check
 

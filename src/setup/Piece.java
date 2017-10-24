@@ -110,12 +110,12 @@ public abstract class Piece implements Cloneable {
 	    return super.clone();
 	}
 	
-//	/**
-//	 * setHasMoved
-//	 * @param m  true if has moved, else false
-//	 */
-//	public void setHasMoved(boolean m) {
-//		hasMoved = m;
-//	}
-//	
+	/**
+	 * setHasMoved
+	 * @param moved Set true if moved
+	 */
+	public void setHasMoved(boolean moved) {
+		hasMoved = moved;
+	}
+
 }
