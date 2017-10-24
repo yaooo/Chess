@@ -163,6 +163,9 @@ public class Board {
 		int q=99;
 		k=getX(pos.charAt(0));
 		q=getY(Integer.parseInt(temp));
+		if(k==-1 || q==-1) {
+			return null;
+		}
 		return board[q][k];
 		
 	}
@@ -198,6 +201,9 @@ public class Board {
 		case 'h':
 			k=7;
 			break;
+		default:
+			k=-1;
+			break;
 		}
 			return k;
 	
@@ -229,6 +235,8 @@ public class Board {
 		case 1:
 			q=7;
 			break;
+		default:
+			q=-1;
 		}
 		return q;
 	}

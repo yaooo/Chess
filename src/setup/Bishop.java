@@ -15,9 +15,9 @@ public class Bishop extends Piece {
 	}
 
 	@Override
-	public Square[][] move(String input, Square[][] board) {
+	public void move(String start , String end, Board board) {
 		// TODO Auto-generated method stub
-		return null;
+		
 		
 	}
 

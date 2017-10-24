@@ -83,7 +83,7 @@ public abstract class Piece implements Cloneable {
 	 * @param board
 	 * @return the board after moving
 	 */
-	public abstract Square[][] move(String input, Square[][] board);
+	public abstract void move(String start ,String end, Board board);
 	
 	/**
 	 * canEnpassant()

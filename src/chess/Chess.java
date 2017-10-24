@@ -10,13 +10,22 @@ public class Chess {
 	public static void main(String[] args) {
 			Board b = new Board();
 			b.initBoard();
+			Pawn temp = new Pawn("white");
+			b.getSquare("a3").setPiece(temp);
 			b.printBoard();
+			if(b.getSquare("a2").getPiece().isValidMove("a2","a4",b)) {
+				b.getSquare("a2").getPiece().move("a2","a4",b);
+				System.out.println("");
+				b.printBoard();
+			}
+			else {
+				System.out.println("non valid move");
+			}
 
 
-
-		System.out.println(Movement.hasPiecesInBetween("a6", "b7",b));
-		System.out.println(Movement.hasPiecesInBetween("a1", "c3",b));
-		System.out.println(Movement.hasPiecesInBetween("c3", "a5",b));
+		//System.out.println(Movement.hasPiecesInBetween("a6", "b7",b));
+		//System.out.println(Movement.hasPiecesInBetween("a1", "c3",b));
+		//System.out.println(Movement.hasPiecesInBetween("c3", "a5",b));
 
 
 		// i is rank, j is file

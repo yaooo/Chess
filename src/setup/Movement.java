@@ -28,7 +28,7 @@ public class Movement {
         }
 
 
-        System.out.println("start:" + start_rank + "dest rank:" + dest_rank);
+        //System.out.println("start:" + start_rank + "dest rank:" + dest_rank);
 
         // if the files are the same
         if (start_file == dest_file) {
