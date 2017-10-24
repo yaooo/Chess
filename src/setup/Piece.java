@@ -28,11 +28,10 @@ public abstract class Piece implements Cloneable {
 	 * hasMoved()
 	 * Checks to see whether a piece has moved previous, returns true if yes
 	 * @return boolean
-	 * 
-	 
-//	public boolean hasMoved() {
-//		return hasMoved;
-//	}
+	 */
+	public boolean hasMoved() {
+		return hasMoved;
+	}
 //	
 //	/**
 //	 * moved()
@@ -79,7 +78,8 @@ public abstract class Piece implements Cloneable {
 	public abstract boolean isValidMove(String start,String input, Board board);
 	
 	/**
-	 * @param input
+	 * @param start
+	 * @param end
 	 * @param board
 	 * @return the board after moving
 	 */

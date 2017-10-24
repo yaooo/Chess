@@ -52,7 +52,7 @@ public class Movement {
         // if the ranks are the same
         if (dest_rank == start_rank) {
             if (dest_file - start_file < 0) {
-                for (int i = start_file - 1; i > dest_file ; i--) {
+                for (int i = start_file - 1; i > dest_file; i--) {
                     if (board[start_rank][i].getPieceType() != null)
                         System.out.print("file" + i);
                         return true;
