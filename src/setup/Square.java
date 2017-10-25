@@ -100,6 +100,7 @@ public class Square implements Cloneable {
 		return getPieceColor() + getPieceType();
 	}
 
-	public Object clone() throws CloneNotSupportedException { return super.clone();
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 }

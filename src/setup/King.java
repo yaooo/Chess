@@ -121,17 +121,28 @@ public class King extends Piece {
         int start_rank=getRank(Integer.parseInt(startKingPos.charAt(1)+""));
         int dest_rank=getRank(Integer.parseInt(endKingPos.charAt(1)+""));
 
+        int rook_ini_file = start_file; //will be replaced anyway
+        int rook_dest_file = dest_file; //will be replaced anyway
+        int rook_ini_rank = start_rank;
+        int rook_dest_rank = start_rank;
+
+        if(dest_file == 2){
+            rook_ini_file = 0;
+            rook_dest_file = 3;
+        }else if(dest_file == 6){
+            rook_ini_file = 7;
+            rook_dest_file = 5;
+        }
+
         Square[][] b = board.getBoard();
 
-        switch(startKingPos){
-            case "e8":
-                    //TODO
-                break;
-            case "e1":
-                    //TODO
-                break;
+        //TODO: test it if it's right when set the board member to "NULL"
+        b[rook_dest_rank][rook_dest_file] = b[rook_ini_rank][rook_ini_file];
+        b[rook_ini_rank][rook_ini_file] = null;
 
-        }
+        b[dest_rank][dest_file] = b[start_rank][start_file];
+        b[start_rank][start_file] = null;
+
         return b;
     }
 
