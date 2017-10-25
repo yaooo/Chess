@@ -20,11 +20,44 @@ public class King extends Piece {
 
         //TODO: Check for king's special move, has moved piece cannot do it
         if(!this.hasMoved() && Math.abs(diff_rank) == 2 && dest_file == 0){
+            boolean hasPiecesInBetween = true;
+            Piece rook = null;
+            switch (input){
+                case "c8":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a8", board);
+                    rook = board.getSquare("a8").getPiece();
 
-                //TODO: Four different cases
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
 
+                case "g8":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h8", board);
+                    rook = board.getSquare("h8").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+                case "c1":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a1", board);
+                    rook = board.getSquare("a1").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+                case "g1":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h1", board);
+                    rook = board.getSquare("h1").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+            }
         }
-
 
 
         // Check the input parameters
