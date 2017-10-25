@@ -36,14 +36,14 @@ public class Bishop extends Piece {
 
 		Piece dest = board.getSquare(input).getPiece();
 
-		boolean rookColor = this.isWhite();
+		boolean bColor = this.isWhite();
 		boolean hasPieceInBetween = Movement.hasPiecesInBetween(start,input,board);
 
 		if(hasPieceInBetween)
 			return false;
 		if(dest != null) {
 			boolean destColor = dest.isWhite();
-			if (rookColor == destColor)
+			if (bColor == destColor)
 				return false;
 		}
 		return true;

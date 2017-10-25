@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b6db3a-4a2c-463c-be08-ebb03d2edeb6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup/Bishop.java" afterPath="$PROJECT_DIR$/src/setup/Bishop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setup/Knight.java" afterPath="$PROJECT_DIR$/src/setup/Knight.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +34,16 @@
               <folding>
                 <element signature="method#getRank#0;class#Movement#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Knight.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/setup/Knight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bishop.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bishop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/setup/Bishop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            <state relative-caret-position="348">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="65" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -126,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/setup/Knight.java" />
         <option value="$PROJECT_DIR$/src/setup/Queen.java" />
         <option value="$PROJECT_DIR$/src/setup/Square.java" />
         <option value="$PROJECT_DIR$/src/setup/Board.java" />
@@ -137,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/setup/Piece.java" />
         <option value="$PROJECT_DIR$/src/chess/Chess.java" />
         <option value="$PROJECT_DIR$/src/setup/Bishop.java" />
+        <option value="$PROJECT_DIR$/src/setup/Knight.java" />
       </list>
     </option>
   </component>
@@ -741,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Knight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/setup/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -814,6 +818,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup/Rook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2552">
@@ -824,18 +836,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Rook.java">
+    <entry file="file://$PROJECT_DIR$/src/setup/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="53" column="2" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="65" selection-end-column="9" />
+        <state relative-caret-position="348">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="65" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Bishop.java">
+    <entry file="file://$PROJECT_DIR$/src/setup/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        <state relative-caret-position="406">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
