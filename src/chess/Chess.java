@@ -29,6 +29,7 @@ public class Chess {
 			b.getSquare("d1").setPiece(null);
 			b.getSquare("b1").setPiece(null);
 			b.getSquare("c1").setPiece(null);
+			b.getSquare("d2").setPiece(null);
 
 			System.out.println(Movement.hasPiecesInBetween("e1", "c1", b));
 
@@ -37,6 +38,11 @@ public class Chess {
 			System.out.println("");
 			b.printBoard();
 
+			//Test for rook
+//			b.getSquare("d1").getPiece().move("d1","d7",b);
+//			b.getSquare("d1").getPiece().move("d1","d7",b);
+
+//			b.printBoard();
 
 		//i is rank, j is file
 /*		for(int i = 0; i < 8; i++){

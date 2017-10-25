@@ -11,8 +11,8 @@ public class King extends Piece {
 
         int start_file = start.charAt(0) - 'a';
         int dest_file = input.charAt(0) - 'a';
-        int start_rank=getRank(Integer.parseInt(start.charAt(1)+""));
-        int dest_rank=getRank(Integer.parseInt(input.charAt(1)+""));
+        int start_rank= Movement.getRank(Integer.parseInt(start.charAt(1)+""));
+        int dest_rank= Movement.getRank(Integer.parseInt(input.charAt(1)+""));
 
         Square[][] b = board.getBoard();    //board is 8x8 matrix
         int diff_rank = dest_rank - start_rank;
@@ -94,15 +94,15 @@ public class King extends Piece {
     public void move(String startKingPos, String endKingPos, Board board) {
         int start_file = startKingPos.charAt(0) - 'a';
         int dest_file = endKingPos.charAt(0) - 'a';
-        int start_rank=getRank(Integer.parseInt(startKingPos.charAt(1)+""));
-        int dest_rank=getRank(Integer.parseInt(endKingPos.charAt(1)+""));
+        int start_rank= Movement.getRank(Integer.parseInt(startKingPos.charAt(1)+""));
+        int dest_rank= Movement.getRank(Integer.parseInt(endKingPos.charAt(1)+""));
 
         if(isValidMove(startKingPos,endKingPos, board)){
             this.moved();
 
             if(Math.abs(start_file - dest_file) <= 1) {
-                board.getSquare(startKingPos).setPiece(null);
                 board.getSquare(endKingPos).setPiece(this);
+                board.getSquare(startKingPos).setPiece(null);
             }else{
                 board.setBoard(castling(startKingPos, endKingPos, board));
             }
@@ -122,8 +122,8 @@ public class King extends Piece {
     private Square[][] castling(String startKingPos, String endKingPos, Board board) {
         int start_file = startKingPos.charAt(0) - 'a';
         int dest_file = endKingPos.charAt(0) - 'a';
-        int start_rank=getRank(Integer.parseInt(startKingPos.charAt(1)+""));
-        int dest_rank=getRank(Integer.parseInt(endKingPos.charAt(1)+""));
+        int start_rank= Movement.getRank(Integer.parseInt(startKingPos.charAt(1)+""));
+        int dest_rank= Movement.getRank(Integer.parseInt(endKingPos.charAt(1)+""));
 
         int rook_ini_file = start_file; //will be replaced anyway
         int rook_dest_file = dest_file; //will be replaced anyway
@@ -153,36 +153,4 @@ public class King extends Piece {
         return b;
     }
 
-    private int getRank(int j) {
-        int q=99;
-        switch(j) {
-            case 8:
-                q=0;
-                break;
-            case 7:
-                q=1;
-                break;
-            case 6:
-                q=2;
-                break;
-            case 5:
-                q=3;
-                break;
-            case 4:
-                q=4;
-                break;
-            case 3:
-                q=5;
-                break;
-            case 2:
-                q=6;
-                break;
-            case 1:
-                q=7;
-                break;
-            default:
-                q=-1;
-        }
-        return q;
-    }
 }

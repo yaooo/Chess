@@ -41,8 +41,8 @@ public class Pawn extends Piece{
 
     @Override
     public void move(String start ,String end, Board board) {
-    	board.getSquare(start).setPiece(null);
 		board.getSquare(end).setPiece(this);
+		board.getSquare(start).setPiece(null);
     }
     
 }

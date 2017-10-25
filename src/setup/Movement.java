@@ -44,10 +44,8 @@ public class Movement {
                         return true;
                     }
                 }
-
             }
         }
-
 
         // if the ranks are the same
         if (dest_rank == start_rank) {
@@ -63,7 +61,6 @@ public class Movement {
                 }
             }
         }
-
 
         // check diagonally, assume diff_file = diff_rank
         if (Math.abs(start_file - dest_file) == Math.abs(start_rank - dest_rank)) {
@@ -94,10 +91,7 @@ public class Movement {
                 }
             }
         }
-
-
         return false;
-
     }
 	
 	public static int getRank(int j) {
