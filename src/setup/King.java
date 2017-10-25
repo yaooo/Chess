@@ -19,7 +19,7 @@ public class King extends Piece {
         int diff_file = dest_file - start_file;
 
         //TODO: Check for king's special move, has moved piece cannot do it
-        if(!this.hasMoved() && Math.abs(diff_rank) == 2 && dest_file == 0){
+        if(!this.hasMoved() && Math.abs(diff_file) == 2 && diff_rank == 0){
             boolean hasPiecesInBetween = true;
             Piece rook = null;
             switch (input){
@@ -100,13 +100,15 @@ public class King extends Piece {
         if(isValidMove(startKingPos,endKingPos, board)){
             this.moved();
 
-            if(Math.abs(start_rank - dest_rank) <= 1) {
+            if(Math.abs(start_file - dest_file) <= 1) {
                 board.getSquare(startKingPos).setPiece(null);
                 board.getSquare(endKingPos).setPiece(this);
             }else{
                 board.setBoard(castling(startKingPos, endKingPos, board));
             }
 
+        }else{
+            System.out.println("Non-valid move");
         }
     }
 
@@ -117,7 +119,7 @@ public class King extends Piece {
      * @param board The chessboard
      * @return The updated chessboard
      */
-    public Square[][] castling(String startKingPos, String endKingPos, Board board) {
+    private Square[][] castling(String startKingPos, String endKingPos, Board board) {
         int start_file = startKingPos.charAt(0) - 'a';
         int dest_file = endKingPos.charAt(0) - 'a';
         int start_rank=getRank(Integer.parseInt(startKingPos.charAt(1)+""));
@@ -147,6 +149,7 @@ public class King extends Piece {
         b[dest_rank][dest_file].setPiece(king);
         b[start_rank][start_file].setPiece(null);
 
+        System.out.println("NEED to do castling");
         return b;
     }
 

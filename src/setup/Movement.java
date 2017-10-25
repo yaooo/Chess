@@ -54,7 +54,6 @@ public class Movement {
             if (dest_file - start_file < 0) {
                 for (int i = start_file - 1; i > dest_file; i--) {
                     if (board[start_rank][i].getPieceType() != null)
-                        System.out.print("file" + i);
                         return true;
                 }
             } else if (dest_file - start_file > 0) {
