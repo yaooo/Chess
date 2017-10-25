@@ -44,5 +44,10 @@ public class Pawn extends Piece{
 		board.getSquare(end).setPiece(this);
 		board.getSquare(start).setPiece(null);
     }
-    
+
+    private Square[][] promotion(/*Something....*/){
+		//TODO: Promote the pawn to Queen
+    	return null;
+	}
+
 }
