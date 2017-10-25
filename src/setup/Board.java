@@ -174,6 +174,10 @@ public class Board {
 		return this.board;
 	}
 
+	public void setBoard(Square[][] b){
+		this.board = b;
+	}
+
 	public int getX (char i) {
 		int k=99;
 		switch(i) {

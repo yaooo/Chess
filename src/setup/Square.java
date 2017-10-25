@@ -17,6 +17,11 @@ public class Square implements Cloneable {
 		isBlack = color.equals("black");
 	}
 
+	public Square(Piece piece, boolean isBlack){
+		this.occupyingPiece = piece;
+		this.isBlack = isBlack;
+	}
+
 	/**
 	 * setPiece()
 	 * @param piece

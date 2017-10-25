@@ -98,13 +98,15 @@ public class King extends Piece {
         int dest_rank=getRank(Integer.parseInt(endKingPos.charAt(1)+""));
 
         if(isValidMove(startKingPos,endKingPos, board)){
+            this.moved();
+
             if(Math.abs(start_rank - dest_rank) <= 1) {
                 board.getSquare(startKingPos).setPiece(null);
                 board.getSquare(endKingPos).setPiece(this);
+            }else{
+                board.setBoard(castling(startKingPos, endKingPos, board));
             }
 
-            //TODO: the case of castling
-            //TODO: call castling(String startKingPos, String endKingPos, Board board)
         }
     }
 
@@ -136,12 +138,14 @@ public class King extends Piece {
 
         Square[][] b = board.getBoard();
 
-        //TODO: test it if it's right when set the board member to "NULL"
-        b[rook_dest_rank][rook_dest_file] = b[rook_ini_rank][rook_ini_file];
-        b[rook_ini_rank][rook_ini_file] = null;
+        Piece rook = b[rook_ini_rank][rook_ini_file].getPiece();
+        Piece king = b[start_rank][start_file].getPiece();
 
-        b[dest_rank][dest_file] = b[start_rank][start_file];
-        b[start_rank][start_file] = null;
+        b[rook_dest_rank][rook_dest_file].setPiece(rook);
+        b[rook_ini_rank][rook_ini_file].setPiece(null);
+
+        b[dest_rank][dest_file].setPiece(king);
+        b[start_rank][start_file].setPiece(null);
 
         return b;
     }

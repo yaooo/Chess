@@ -32,15 +32,15 @@ public abstract class Piece implements Cloneable {
 	public boolean hasMoved() {
 		return hasMoved;
 	}
-//	
-//	/**
-//	 * moved()
-//	 * Updates hasMoved boolean as true to indicated a piece has moved
-//	 * @return void
-//	 */
-//	public void moved() {
-//		hasMoved = true;
-//	}
+
+	/**
+	 * moved()
+	 * Updates hasMoved boolean as true to indicated a piece has moved
+	 * @return void
+	 */
+	public void moved() {
+		hasMoved = true;
+	}
 	
 	/**
 	 * testForCheck()
@@ -84,7 +84,7 @@ public abstract class Piece implements Cloneable {
 	 * @return the board after moving
 	 */
 	public abstract void move(String start ,String end, Board board);
-	
+
 	/**
 	 * canEnpassant()
 	 * @return boolean
