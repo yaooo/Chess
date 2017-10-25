@@ -12,11 +12,11 @@ public class Movement {
      */
 	public static boolean hasPiecesInBetween(String start, String destination, Board chessBoard) {
         int start_file = start.charAt(0) - 'a';
-        int start_rank = start.charAt(1) - '1';
+        int start_rank ;
         int dest_file = destination.charAt(0) - 'a';
-        int dest_rank = destination.charAt(1) - '1';
-
-
+        int dest_rank ;
+        start_rank=getRank(Integer.parseInt(start.charAt(1)+""));
+        dest_rank=getRank(Integer.parseInt(destination.charAt(1)+""));
         Square[][] board = chessBoard.getBoard();    //board is 8x8 matrix
         int diff_rank = dest_rank - start_rank;
         int diff_file = dest_file - start_file;
@@ -100,4 +100,38 @@ public class Movement {
         return false;
 
     }
+	
+	public static int getRank(int j) {
+		int q=99;
+		switch(j) {
+		case 8:
+			q=0;
+			break;
+		case 7:
+			q=1;
+			break;
+		case 6:
+			q=2;
+			break;
+		case 5:
+			q=3;
+			break;
+		case 4:
+			q=4;
+			break;
+		case 3:
+			q=5;
+			break;
+		case 2:
+			q=6;
+			break;
+		case 1:
+			q=7;
+			break;
+		default:
+			q=-1;
+		}
+		return q;
+	}
+
 }
