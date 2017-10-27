@@ -176,14 +176,14 @@ public class King extends Piece {
     	boolean check=false;
     	for(int i=0;i<8;i++) {
     		for(int j=0;j<8;j++){
-    			if(b[i][j].getPiece()!=null && this.isWhite==true && !(b[i][j].getPiece().isWhite())){
+    			if(b[i][j].getPiece()!=null && this.isWhite() && !(b[i][j].getPiece().isWhite())){
     				String h = reverseN(i,j);
     				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
     					check=true;
     				}
     				
     			}
-    			else if(b[i][j].getPiece()!=null && this.isWhite!=true && b[i][j].getPiece().isWhite()) {
+    			else if(b[i][j].getPiece()!=null && this.isWhite() && b[i][j].getPiece().isWhite()) {
     				String h = reverseN(i,j);
     				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
     					check=true;
@@ -220,7 +220,7 @@ public class King extends Piece {
     	return cMate;
     }
     
-    public String reverseN(int k, int q) {
+    private String reverseN(int k, int q) {
     	String rank="";
     	String file="";
 		switch(k) {
