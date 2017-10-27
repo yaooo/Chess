@@ -117,7 +117,7 @@ public class Board {
 					board[i][j]= new Square(temp,"white");
 				}
 				else if(i==7 && j==4) {
-					King temp = new King("black");
+					King temp = new King("white");
 					board[i][j]= new Square(temp,"black");
 				}
 				else if(i==6) {

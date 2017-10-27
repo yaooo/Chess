@@ -26,59 +26,63 @@ public class King extends Piece {
         int diff_file = dest_file - start_file;
 
         //TODO: Check for king's special move, has moved piece cannot do it
-        if(!this.hasMoved() && Math.abs(diff_file) == 2 && diff_rank == 0){
-            boolean hasPiecesInBetween = true;
-            Piece rook = null;
-            switch (input){
-                case "c8":
-                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a8", board);
-                    rook = board.getSquare("a8").getPiece();
-
-                    if(rook != null){
-                        return(!hasPiecesInBetween && !rook.hasMoved());
-                    }else
-                        return false;
-
-                case "g8":
-                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h8", board);
-                    rook = board.getSquare("h8").getPiece();
-
-                    if(rook != null){
-                        return(!hasPiecesInBetween && !rook.hasMoved());
-                    }else
-                        return false;
-                case "c1":
-                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a1", board);
-                    rook = board.getSquare("a1").getPiece();
-
-                    if(rook != null){
-                        return(!hasPiecesInBetween && !rook.hasMoved());
-                    }else
-                        return false;
-                case "g1":
-                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h1", board);
-                    rook = board.getSquare("h1").getPiece();
-
-                    if(rook != null){
-                        return(!hasPiecesInBetween && !rook.hasMoved());
-                    }else
-                        return false;
-            }
-        }
+//        if(!this.hasMoved() && Math.abs(diff_file) == 2 && diff_rank == 0){
+//            boolean hasPiecesInBetween = true;
+//            Piece rook = null;
+//            switch (input){
+//                case "c8":
+//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a8", board);
+//                    rook = board.getSquare("a8").getPiece();
+//
+//                    if(rook != null){
+//                        return(!hasPiecesInBetween && !rook.hasMoved());
+//                    }else
+//                        return false;
+//
+//                case "g8":
+//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h8", board);
+//                    rook = board.getSquare("h8").getPiece();
+//
+//                    if(rook != null){
+//                        return(!hasPiecesInBetween && !rook.hasMoved());
+//                    }else
+//                        return false;
+//                case "c1":
+//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a1", board);
+//                    rook = board.getSquare("a1").getPiece();
+//
+//                    if(rook != null){
+//                        return(!hasPiecesInBetween && !rook.hasMoved());
+//                    }else
+//                        return false;
+//                case "g1":
+//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h1", board);
+//                    rook = board.getSquare("h1").getPiece();
+//
+//                    if(rook != null){
+//                        return(!hasPiecesInBetween && !rook.hasMoved());
+//                    }else
+//                        return false;
+//            }
+//        }
 
 
         // Check the input parameters
         if(start.equals(input))
             return false;
 
-        if(Math.abs(diff_file) > 1 || Math.abs(diff_rank) > 1)
+        if(Math.abs(diff_file) > 1 || Math.abs(diff_rank) > 1) 
             return false;
 
-        if(start_file < 0 || start_file > 7 || dest_file < 0 || dest_file > 7)
-            return false;
+        if(start_file < 0 || start_file > 7 || dest_file < 0 || dest_file > 7) {
+        	System.out.println("hello");
+        	return false;
+        }
 
-        if(dest_rank < 0 || start_rank > 7 || dest_rank < 0 || dest_rank > 7)
-            return false;
+        if(dest_rank < 0 || start_rank > 7 || dest_rank < 0 || dest_rank > 7) {
+        	System.out.println("hello2");
+        	return false;
+        }
 
         Square startPos = board.getSquare(start);
         Square endPos = board.getSquare(input);
@@ -87,11 +91,15 @@ public class King extends Piece {
         if(endPos.getPieceType() != null) {
             // King cannot eat his own people
             if (startPos.getPieceColor().equals("w")) {
-                if (endPos.getPieceColor().equals("w"))
-                    return false;
+                if (endPos.getPieceColor().equals("w")) {
+                	System.out.println("hello3");
+                	return false;
+                }
             } else if (startPos.getPieceColor().equals("b")) {
-                if (endPos.getPieceColor().equals("b"))
+                if (endPos.getPieceColor().equals("b")){
+                	System.out.println("hello4");
                     return false;
+                }
             }
         }
         return true;
@@ -161,9 +169,94 @@ public class King extends Piece {
         return b;
     }
 
-    public boolean inCheck(Board board){
-    	Square b[][] = board.getBoard();
+    
+    
+    public boolean inCheck(Board board) {
+    	Square b[][]=board.getBoard();
+    	boolean check;
+    	int count=0;
+    	for(int i=0;i<8;i++) {
+    		for(int j=0;j<8;j++){
+    			if(b[i][j].getPiece()!=null && this.isWhite==true && !(b[i][j].getPiece().isWhite())){
+    				String h = reverseN(i,j);
+    				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
+    					check=true;
+    				}
+    				
+    			}
+    			else if(b[i][j].getPiece()!=null && this.isWhite!=true && b[i][j].getPiece().isWhite()) {
+    				String h = reverseN(i,j);
+    				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
+    					check=true;
+    				}
+    			}
+    				
+    		}
+    	}
+    	return true;
+    }
+    
+    public String reverseN(int k, int q) {
+    	String rank="";
+    	String file="";
+		switch(k) {
+		case 0:
+			rank="8";
+			break;
+		case 1:
+			rank="7";
+			break;
+		case 2:
+			rank="6";
+			break;
+		case 3:
+			rank="5";
+			break;
+		case 4:
+			rank="4";
+			break;
+		case 5:
+			rank="3";
+			break;
+		case 6:
+			rank="2";
+			break;
+		case 7:
+			rank="1";
+			break;
+		default:
+			rank="-1";
+		}
+		
+		switch(q) {
+		case 0:
+			file="a";
+			break;
+		case 1:
+			file="b";
+			break;
+		case 2:
+			file="c";
+			break;
+		case 3:
+			file="d";
+			break;
+		case 4:
+			file="e";
+			break;
+		case 5:
+			file="f";
+			break;
+		case 6:
+			file="g";
+			break;
+		case 7:
+			file="h";
+			break;
+		default:
+			file="-1";
+		}
+		return rank+file;
     	
-    	return false;
     }
 }
