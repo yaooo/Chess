@@ -12,7 +12,7 @@ public class King extends Piece {
         	kingPos="e8";
         }
     }
-    String kingPos;
+    public String kingPos;
     @Override
     public boolean isValidMove(String start,String input, Board board) {
 
@@ -26,45 +26,45 @@ public class King extends Piece {
         int diff_file = dest_file - start_file;
 
         //TODO: Check for king's special move, has moved piece cannot do it
-//        if(!this.hasMoved() && Math.abs(diff_file) == 2 && diff_rank == 0){
-//            boolean hasPiecesInBetween = true;
-//            Piece rook = null;
-//            switch (input){
-//                case "c8":
-//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a8", board);
-//                    rook = board.getSquare("a8").getPiece();
-//
-//                    if(rook != null){
-//                        return(!hasPiecesInBetween && !rook.hasMoved());
-//                    }else
-//                        return false;
-//
-//                case "g8":
-//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h8", board);
-//                    rook = board.getSquare("h8").getPiece();
-//
-//                    if(rook != null){
-//                        return(!hasPiecesInBetween && !rook.hasMoved());
-//                    }else
-//                        return false;
-//                case "c1":
-//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a1", board);
-//                    rook = board.getSquare("a1").getPiece();
-//
-//                    if(rook != null){
-//                        return(!hasPiecesInBetween && !rook.hasMoved());
-//                    }else
-//                        return false;
-//                case "g1":
-//                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h1", board);
-//                    rook = board.getSquare("h1").getPiece();
-//
-//                    if(rook != null){
-//                        return(!hasPiecesInBetween && !rook.hasMoved());
-//                    }else
-//                        return false;
-//            }
-//        }
+        if(!this.hasMoved() && Math.abs(diff_file) == 2 && diff_rank == 0){
+            boolean hasPiecesInBetween = true;
+            Piece rook = null;
+            switch (input){
+                case "c8":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a8", board);
+                    rook = board.getSquare("a8").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+
+                case "g8":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h8", board);
+                    rook = board.getSquare("h8").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+                case "c1":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "a1", board);
+                    rook = board.getSquare("a1").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+                case "g1":
+                    hasPiecesInBetween = Movement.hasPiecesInBetween(start, "h1", board);
+                    rook = board.getSquare("h1").getPiece();
+
+                    if(rook != null){
+                        return(!hasPiecesInBetween && !rook.hasMoved());
+                    }else
+                        return false;
+            }
+        }
 
 
         // Check the input parameters
@@ -173,8 +173,7 @@ public class King extends Piece {
     
     public boolean inCheck(Board board) {
     	Square b[][]=board.getBoard();
-    	boolean check;
-    	int count=0;
+    	boolean check=false;
     	for(int i=0;i<8;i++) {
     		for(int j=0;j<8;j++){
     			if(b[i][j].getPiece()!=null && this.isWhite==true && !(b[i][j].getPiece().isWhite())){
@@ -193,7 +192,32 @@ public class King extends Piece {
     				
     		}
     	}
-    	return true;
+    	return check;
+    }
+    
+    public boolean checkMate(Board board) {
+    	Square b[][]=board.getBoard();
+    	int start_file = kingPos.charAt(0) - 'a';
+    	int start_rank= Movement.getRank(Integer.parseInt(kingPos.charAt(1)+""));
+    	boolean cMate=false;
+    	cMate=b[start_file][start_rank].getPiece().inCheck(board);
+    	if(cMate==false) {
+    		return cMate;
+    	}
+    	for(int i=start_rank-1;i<=start_rank+1;i++) {
+    		for(int j=start_file;j<start_file+1;j++) {
+    			if((i>7 || i<0) || (j>7 ||j<0)){
+    			}
+	    		else if(b[i][j].getPiece()==null) {
+	    			b[i][j].setPiece(this);
+	    			b[start_file][start_rank].setPiece(null);
+	    			cMate=(cMate && b[i][j].getPiece().inCheck(board));
+	    			b[start_file][start_rank].setPiece(this);
+	    			b[i][j].setPiece(null);
+	    		}
+    		}
+    	}
+    	return cMate;
     }
     
     public String reverseN(int k, int q) {
@@ -256,7 +280,7 @@ public class King extends Piece {
 		default:
 			file="-1";
 		}
-		return rank+file;
+		return file+rank;
     	
     }
 }

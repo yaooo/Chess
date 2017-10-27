@@ -64,8 +64,4 @@ public class Queen extends Piece {
     	return false ;
     }
     
-    public boolean inCheck(Board board){
-    	Square b[][] = board.getBoard();
-    	return false;
-    }
 }

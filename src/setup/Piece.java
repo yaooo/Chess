@@ -117,5 +117,10 @@ public abstract class Piece implements Cloneable {
 	public void setHasMoved(boolean moved) {
 		hasMoved = moved;
 	}
-
+	public boolean inCheck(Board board) {
+		return false;
+	}
+	public boolean checkMate(Board board) {
+		return false;
+	}
 }
