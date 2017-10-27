@@ -5,7 +5,14 @@ public class King extends Piece {
     public King(String color) {
         super(color);
         type="king";
+        if(this.isWhite){
+        	kingPos="e1";
+        }
+        else {
+        	kingPos="e8";
+        }
     }
+    String kingPos;
     @Override
     public boolean isValidMove(String start,String input, Board board) {
 
@@ -110,6 +117,7 @@ public class King extends Piece {
         }else{
             System.out.println("Non-valid move");
         }
+        kingPos=endKingPos;
     }
 
     /**
@@ -153,4 +161,9 @@ public class King extends Piece {
         return b;
     }
 
+    public boolean inCheck(Board board){
+    	Square b[][] = board.getBoard();
+    	
+    	return false;
+    }
 }

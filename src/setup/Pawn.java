@@ -15,6 +15,7 @@ public class Pawn extends Piece{
          int dest_rank= Movement.getRank(Integer.parseInt(input.charAt(1)+""));
          Square[][] b = board.getBoard();  
          
+         
          if(this.isWhite()) {
 	         if(hasMoved==false && dest_rank==start_rank-2 && b[dest_rank][dest_file].getPiece()==null && !(Movement.hasPiecesInBetween(start, input, board))) {
 	        	 EnPassant=true;
