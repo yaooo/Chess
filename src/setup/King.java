@@ -176,18 +176,20 @@ public class King extends Piece {
     	boolean check=false;
     	for(int i=0;i<8;i++) {
     		for(int j=0;j<8;j++){
-    			if(b[i][j].getPiece()!=null && this.isWhite() && !(b[i][j].getPiece().isWhite())){
+    			if(b[i][j].getPiece()!=null && this.isWhite() && !(b[i][j].getPiece().isWhite()) && b[i][j].getPiece()!=this){
     				String h = reverseN(i,j);
     				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
     					check=true;
     				}
     				
+    				
     			}
-    			else if(b[i][j].getPiece()!=null && this.isWhite() && b[i][j].getPiece().isWhite()) {
+    			else if(b[i][j].getPiece()!=null && !(this.isWhite()) && b[i][j].getPiece().isWhite()) {
     				String h = reverseN(i,j);
     				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
     					check=true;
     				}
+    				
     			}
     				
     		}
@@ -200,20 +202,27 @@ public class King extends Piece {
     	int start_file = kingPos.charAt(0) - 'a';
     	int start_rank= Movement.getRank(Integer.parseInt(kingPos.charAt(1)+""));
     	boolean cMate=false;
-    	cMate=b[start_file][start_rank].getPiece().inCheck(board);
+    	String oldkingPos=kingPos;
+    	//System.out.println("from position:e3-----------");
+    	cMate=b[start_rank][start_file].getPiece().inCheck(board);
     	if(cMate==false) {
     		return cMate;
     	}
     	for(int i=start_rank-1;i<=start_rank+1;i++) {
-    		for(int j=start_file;j<start_file+1;j++) {
+    		for(int j=start_file-1;j<=start_file+1;j++) {
     			if((i>7 || i<0) || (j>7 ||j<0)){
     			}
 	    		else if(b[i][j].getPiece()==null) {
 	    			b[i][j].setPiece(this);
-	    			b[start_file][start_rank].setPiece(null);
-	    			cMate=(cMate && b[i][j].getPiece().inCheck(board));
-	    			b[start_file][start_rank].setPiece(this);
+	    			b[start_rank][start_file].setPiece(null);
+	    			board.setBoard(b);
+	    			String h=reverseN(i,j);
+	    			this.kingPos=h;
+	    			cMate=(cMate && board.getSquare(h).getPiece().inCheck(board));
+	    			b[start_rank][start_file].setPiece(this);
 	    			b[i][j].setPiece(null);
+	    			this.kingPos=oldkingPos;
+	    			board.setBoard(b);
 	    		}
     		}
     	}
