@@ -244,4 +244,25 @@ public class Board {
 		}
 		return q;
 	}
+	public void initClearBoard() {
+		int whiteTile=0;
+		for(int i=0;i<board.length;i++) {
+			for(int j=0;j<board[i].length;j++) {
+				if(whiteTile==0){
+					board[i][j]= new Square("white");
+					whiteTile=1;
+				}
+				else {
+					board[i][j]=new Square("black");
+					whiteTile=0;
+				}
+			}
+			if(whiteTile==0) {
+				whiteTile=1;
+			}
+			else if(whiteTile==1) {
+				whiteTile=0;
+			}
+		}
+	}
 }

@@ -1,5 +1,6 @@
 package chess;
 import setup.*;
+import java.util.Scanner;
 /**
  * @author Sagar Patel
  * @author Yao Shi
@@ -9,48 +10,47 @@ import setup.*;
 public class Chess {
 	public static void main(String[] args) {
 			Board b = new Board();
+			Scanner scn=new Scanner(System.in);
 			b.initBoard();
-//			Pawn temp = new Pawn("white");
-//			b.getSquare("a3").setPiece(temp);
-//			b.printBoard();
-//			if(b.getSquare("a2").getPiece().isValidMove("a2","a4",b)) {
-//				b.getSquare("a2").getPiece().move("a2","a4",b);
-//				System.out.println("");
-//				b.printBoard();
-//			}
-//			else {
-//				System.out.println("non valid move");
-//			}
-
-
-			// Test for castling
-			System.out.println("\nTest for castling");
-
-			b.getSquare("d1").setPiece(null);
-			b.getSquare("b1").setPiece(null);
-			b.getSquare("c1").setPiece(null);
-			b.getSquare("d2").setPiece(null);
-
-			System.out.println(Movement.hasPiecesInBetween("e1", "c1", b));
-
-
-			b.getSquare("e1").getPiece().move("e1", "c1", b);
-			System.out.println("");
 			b.printBoard();
-
-			//Test for rook
-//			b.getSquare("d1").getPiece().move("d1","d7",b);
-//			b.getSquare("d1").getPiece().move("d1","d7",b);
-
-//			b.printBoard();
-
-		//i is rank, j is file
-/*		for(int i = 0; i < 8; i++){
-			for(int j = 0; j < 8; j++){
-				if(b.getBoard()[i][j].getPieceType() == null){
-					System.out.println("i+j:" + i +","+j);
+			String input;
+			boolean whiteTurn=true;
+			System.out.println("White player make your move.");
+			input=scn.nextLine();
+			String parts[]=input.split(" ");
+			Pawn PassantTrack=null;
+			while(!(parts[0].equals("resign"))){
+				if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
+					System.out.println("illegal move,try again");
 				}
+				else if(b.getSquare(parts[0]).getPieceColor().equals("b")&& whiteTurn==true) {
+					System.out.println("illegal move,try again");
+				}
+				else if(b.getSquare(parts[0]).getPiece().isValidMove(parts[0], parts[1], b)) {
+					b.getSquare(parts[0]).getPiece().move(parts[0],parts[1],b);
+					if(b.getSquare(parts[1]).getPieceType().equals("p")){
+						if(PassantTrack==null) {
+							PassantTrack=(Pawn)b.getSquare(parts[1]).getPiece();
+						}
+						else{
+							PassantTrack.setEnpassant();
+							PassantTrack=(Pawn)b.getSquare(parts[1]).getPiece();
+						}
+					}
+					else if(PassantTrack!=null && !(b.getSquare(parts[1]).getPieceType().equals("p"))){
+						PassantTrack.setEnpassant();
+						PassantTrack=null;
+					}
+					b.printBoard();
+					whiteTurn=!whiteTurn;
+				}
+				else {
+					System.out.println("illegal move,try again");
+				}
+					
+				input=scn.nextLine();
+				parts=input.split(" ");
 			}
-		}*/
+
 	}
 }
