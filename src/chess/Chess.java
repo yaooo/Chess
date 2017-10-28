@@ -22,7 +22,10 @@ public class Chess {
 			String parts[]=input.split(" ");
 			Pawn PassantTrack=null;
 			while(!(parts[0].equals("resign")) &&  !(whiteKing.getPiece().checkMate(b)) &&  !(blackKing.getPiece().checkMate(b))){
-				if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
+				if(parts.length!=2) {
+					System.out.println("illegal move,try again");
+				}
+				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
 				}
 				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
@@ -57,11 +60,17 @@ public class Chess {
 					}
 					b.printBoard();
 					whiteTurn=!whiteTurn;
+					if(whiteKing.getPiece().inCheck(b)) {
+						System.out.println("white player in check");
+					}
+					if(blackKing.getPiece().inCheck(b)) {
+						System.out.println("black player in check");
+					}
 				}
 				else {
 					System.out.println("illegal move,try again");
 				}
-					
+				System.out.println(whiteKing.getPiece().getKingPos());	
 				input=scn.nextLine();
 				parts=input.split(" ");
 			}

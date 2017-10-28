@@ -162,6 +162,12 @@ public class Board {
 		int k=99;
 		int q=99;
 		k=getX(pos.charAt(0));
+		if(!(Character.isDigit(pos.charAt(1)))) {
+			return null;
+		}
+		if(!(Character.isLetter(pos.charAt(0)))) {
+			return null;
+		}
 		q=getY(Integer.parseInt(temp));
 		if(k==-1 || q==-1) {
 			return null;

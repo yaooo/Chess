@@ -292,4 +292,7 @@ public class King extends Piece {
 		return file+rank;
     	
     }
+    public String getKingPos() {
+    	return kingPos;
+    }
 }

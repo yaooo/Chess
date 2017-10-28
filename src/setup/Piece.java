@@ -123,4 +123,7 @@ public abstract class Piece implements Cloneable {
 	public boolean checkMate(Board board) {
 		return false;
 	}
+	public String getKingPos() {
+    	return "";
+    }
 }
