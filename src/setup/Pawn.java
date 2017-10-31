@@ -31,6 +31,7 @@ public class Pawn extends Piece{
          
          if(this.isWhite()) {
 	         if(hasMoved==false && dest_rank==start_rank-2 && b[dest_rank][dest_file].getPiece()==null && !(Movement.hasPiecesInBetween(start, input, board))) {
+	        	 System.out.println("hello9");
 	        	 EnPassant=true;
 	        	 return true;
 	         }
@@ -41,7 +42,7 @@ public class Pawn extends Piece{
 	        		 b[start_rank][start_file-1].getPieceType().equals("p") && 
 	        		 b[start_rank][start_file-1].getPiece().isWhite()==false &&  
 	        		 b[start_rank][start_file-1].getPiece().getEnpassant()==true) {
-	        	 	
+	        	 System.out.println("hello");
 	        	 b[start_rank][start_file-1].setPiece(null);
 	        	 board.setBoard(b);
 	        	 return true;
@@ -53,20 +54,23 @@ public class Pawn extends Piece{
 	        		 b[start_rank][start_file+1].getPieceType().equals("p") && 
 	        		 b[start_rank][start_file+1].getPiece().isWhite()==false &&  
 	        		 b[start_rank][start_file+1].getPiece().getEnpassant()==true) {
-	        	 	
+	        	 System.out.println("hello2");	
 	        	 b[start_rank][start_file+1].setPiece(null);
 	        	 board.setBoard(b);
 	        	 return true;
 	         }
 	         else if(dest_rank==start_rank-1 && (dest_file==start_file-1 || dest_file==start_file+1) && b[dest_rank][dest_file].getPiece()!=null && b[dest_rank][dest_file].getPieceColor().equals("b") ) {
+	        	 System.out.println("hello3");
 	        	 return true;
 	         }
-	         else if(dest_rank==start_rank-1 && b[dest_rank][dest_file].getPiece()==null) {
+	         else if(dest_rank==start_rank-1 && dest_file==start_file && b[dest_rank][dest_file].getPiece()==null) {
+	        	 System.out.println("hello3");
 	        	 return true;
 	         }
          }
          else {
         	 if(hasMoved==false && dest_rank==start_rank+2 && b[dest_rank][dest_file].getPiece()==null && !(Movement.hasPiecesInBetween(start, input, board))) {
+        		 System.out.println("hello4");
         		 EnPassant=true;
 	        	 return true;
 	         }
@@ -77,7 +81,7 @@ public class Pawn extends Piece{
 	        		 b[start_rank][start_file-1].getPieceType().equals("p") && 
 	        		 b[start_rank][start_file-1].getPiece().isWhite()==true &&  
 	        		 b[start_rank][start_file-1].getPiece().getEnpassant()==true) {
-	        	 	
+        		 System.out.println("hello5");	
 	        	 b[start_rank][start_file-1].setPiece(null);
 	        	 board.setBoard(b);
 	        	 return true;
@@ -89,15 +93,17 @@ public class Pawn extends Piece{
 	        		 b[start_rank][start_file+1].getPieceType().equals("p") && 
 	        		 b[start_rank][start_file+1].getPiece().isWhite()==true &&  
 	        		 b[start_rank][start_file+1].getPiece().getEnpassant()==true) {
-	        	 	
+        		 System.out.println("hello6");
 	        	 b[start_rank][start_file+1].setPiece(null);
 	        	 board.setBoard(b);
 	        	 return true;
 	         }
         	 else if(dest_rank==start_rank+1 && (dest_file==start_file-1 || dest_file==start_file+1) && b[dest_rank][dest_file].getPiece()!=null && b[dest_rank][dest_file].getPieceColor().equals("w") ) {
-	        	 return true;
+        		 System.out.println("hello7");
+        		 return true;
 	         }
-	         else if(dest_rank==start_rank+1 && b[dest_rank][dest_file].getPiece()==null) {
+	         else if(dest_rank==start_rank+1 && dest_file==start_file && b[dest_rank][dest_file].getPiece()==null) {
+	        	 System.out.println("hello8");
 	        	 return true;
 	         }
          }
