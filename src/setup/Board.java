@@ -163,7 +163,7 @@ public class Board {
 			Vaxis--;
 			System.out.println("");
 		}
-		System.out.println(" a  b  c  d  e  f  g  h");
+		System.out.println(" a  b  c  d  e  f  g  h\n");
 	}
 
     /**
