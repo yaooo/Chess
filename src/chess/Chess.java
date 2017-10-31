@@ -16,14 +16,22 @@ public class Chess {
 			Square blackKing=b.getSquare("e8");
 			b.printBoard();
 			String input;
+			boolean draw=false;
 			boolean whiteTurn=true;
 			System.out.print("White player make your move:");
 			input=scn.nextLine();
 			String parts[]=input.split(" ");
 			Pawn PassantTrack=null;
 			while(!(parts[0].equals("resign")) &&  !(whiteKing.getPiece().checkMate(b)) &&  !(blackKing.getPiece().checkMate(b))){
-				if(parts.length!=2) {
-					System.out.println("illegal move,try again:");
+				if(parts.length==3 && parts[2].equals("draw?")) {
+					draw=true;
+				}
+				
+				if(draw==true && parts.length==1 && parts[0].equals("draw")) {
+					break;
+				}
+				else if(draw==false && parts.length!=2) {
+					System.out.println("illegal move,try again");
 				}
 				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
@@ -78,14 +86,20 @@ public class Chess {
 					System.out.println("illegal move,try again");
 				}
 				
+				if(draw==true) {
+					draw=false;
+				}
 				input=scn.nextLine();
 				parts=input.split(" ");
 			}
-			if(parts[0].equals("resign")){
-			    if(whiteTurn)
-			        System.out.println("Black wins");
-			    else
-			        System.out.println("White wins");
+			if(draw==true) {
+				System.out.println("draw");
+			}
+			else if(parts[0].equals("resign")){
+			    	if(whiteTurn)
+			    		System.out.println("Black wins");
+			    	else
+			    		System.out.println("White wins");
             }
 			else if(whiteKing.getPiece().checkMate(b)) {
 				System.out.println("Black wins");
