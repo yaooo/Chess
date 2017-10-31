@@ -28,16 +28,16 @@ public class Chess {
 				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
 				}
-				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn) {
+				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
 					System.out.println("illegal move,try again");
 				}
-				else if(b.getSquare(parts[0]).getPieceColor().equals("b")&& whiteTurn) {
+				else if(b.getSquare(parts[0]).getPieceColor().equals("b")&& whiteTurn==true) {
 					System.out.println("illegal move,try again");
 				}
 				else if(b.getSquare(parts[0]).getPiece().isValidMove(parts[0], parts[1], b)) {
 					b.getSquare(parts[0]).getPiece().move(parts[0],parts[1],b);
 					if (b.getSquare(parts[1]).getPieceType().equals("K")){
-						if(b.getSquare(parts[1]).getPiece().isWhite()) {
+						if(b.getSquare(parts[1]).getPiece().isWhite()==true) {
 							whiteKing=b.getSquare(parts[1]);
 						}
 						else {
@@ -70,7 +70,7 @@ public class Chess {
 				else {
 					System.out.println("illegal move,try again");
 				}
-				System.out.println(whiteKing.getPiece().getKingPos());	
+				
 				input=scn.nextLine();
 				parts=input.split(" ");
 			}
