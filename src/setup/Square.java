@@ -5,7 +5,14 @@ package setup;
 
 public class Square implements Cloneable {
 
+    /**
+     * The piece that occupied this square
+     */
 	private Piece occupyingPiece;
+
+    /**
+     * Indicate if it si black
+     */
 	private boolean isBlack;
 
 	/**

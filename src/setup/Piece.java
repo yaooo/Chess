@@ -4,10 +4,25 @@
 package setup;
 public abstract class Piece implements Cloneable {
 
+    /**
+     * If it is white
+     */
 	boolean isWhite;
+
+    /**
+     * The type of the piece
+     */
 	String type;
+
+    /**
+     * boolean that indicates if the piece has moved
+     */
 	boolean hasMoved;
 
+    /**
+     * The piece
+     * @param color The color
+     */
 	public Piece(String color) {
 		isWhite = color.equals("white");
 		type = null;

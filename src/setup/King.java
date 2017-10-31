@@ -1,6 +1,10 @@
 package setup;
 
 public class King extends Piece {
+
+    /**
+     * The String that stores the king's position
+     */
     public String kingPos;
 
     /**
