@@ -81,6 +81,12 @@ public class Chess {
 				input=scn.nextLine();
 				parts=input.split(" ");
 			}
+			if(parts[0].equals("resign")){
+			    if(whiteTurn)
+			        System.out.println("Black wins");
+			    else
+			        System.out.println("White wins");
+            }
 
 	}
 }
