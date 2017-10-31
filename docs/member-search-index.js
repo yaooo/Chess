@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"application","c":"Main","l":"Main()"}]
+memberSearchIndex = [{"p":"setup","c":"Rook","l":"isValidMove(String, String, Board)","url":"isValidMove-java.lang.String-java.lang.String-setup.Board-"},{"p":"setup","c":"Rook","l":"move(String, String, Board)","url":"move-java.lang.String-java.lang.String-setup.Board-"},{"p":"setup","c":"Rook","l":"Rook(String)","url":"Rook-java.lang.String-"}]
