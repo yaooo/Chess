@@ -87,6 +87,12 @@ public class Chess {
 			    else
 			        System.out.println("White wins");
             }
+			else if(whiteKing.getPiece().checkMate(b)) {
+				System.out.println("Black wins");
+			}
+			else if(blackKing.getPiece().checkMate(b)) {
+				System.out.println("White wins");
+			}
 
 	}
 }
