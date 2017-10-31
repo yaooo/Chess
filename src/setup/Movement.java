@@ -22,14 +22,8 @@ public class Movement {
         int diff_file = dest_file - start_file;
 
         if (start.equals(destination)) {
-
             //TODO: the piece does not move(invalid move)
-
         }
-
-
-        //System.out.println("start:" + start_rank + "dest rank:" + dest_rank);
-
         // if the files are the same
         if (start_file == dest_file) {
             if (dest_rank - start_rank < 0) {
@@ -93,7 +87,12 @@ public class Movement {
         }
         return false;
     }
-	
+
+    /**
+     * getRank()
+     * @param j A integer
+     * @return The rank coordinate based on the given integer
+     */
 	public static int getRank(int j) {
 		int q=99;
 		switch(j) {

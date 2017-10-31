@@ -5,14 +5,20 @@ package setup;
  * @version 1.0
  */
 
-
 public class Board {
 
 	private Square[][] board;
 
+	/**
+	 * Constructor of the board
+	 */
 	public Board() {
 		this.board = new Square[8][8];
 	}
+
+    /**
+     * Initialize the board
+     */
 	public void initBoard() {
 		int whiteTile=0;
 		for(int i=0;i<2;i++) {
@@ -133,6 +139,9 @@ public class Board {
 		}
 	}
 
+    /**
+     * Print the board
+     */
 	public void printBoard(){
 
 		int Vaxis=8;
@@ -157,6 +166,11 @@ public class Board {
 		System.out.println(" a  b  c  d  e  f  g  h");
 	}
 
+    /**
+     * Get the square based on the given position
+     * @param pos The position of the piece
+     * @return The Square based on the given position
+     */
 	public Square getSquare(String pos) {
 		String temp=pos.charAt(1)+"";
 		int k=99;
@@ -176,14 +190,27 @@ public class Board {
 		
 	}
 
+    /**
+     * Get board
+     * @return A 2D array with the type Square
+     */
 	public Square[][] getBoard(){
 		return this.board;
 	}
 
+    /**
+     * Set the board to the given board
+     * @param b A 2D array with the type Square
+     */
 	public void setBoard(Square[][] b){
 		this.board = b;
 	}
 
+    /**
+     * Get the x coordinate
+     * @param i A letter indicate the location
+     * @return The x coordinate the piece
+     */
 	public int getX (char i) {
 		int k=99;
 		switch(i) {
@@ -218,6 +245,12 @@ public class Board {
 			return k;
 	
 	}
+
+    /**
+     * Get the y coordinate
+     * @param j A letter indicate the location
+     * @return The y coordinate the piece
+     */
 	public int getY(int j) {
 		int q=99;
 		switch(j) {
@@ -249,26 +282,5 @@ public class Board {
 			q=-1;
 		}
 		return q;
-	}
-	public void initClearBoard() {
-		int whiteTile=0;
-		for(int i=0;i<board.length;i++) {
-			for(int j=0;j<board[i].length;j++) {
-				if(whiteTile==0){
-					board[i][j]= new Square("white");
-					whiteTile=1;
-				}
-				else {
-					board[i][j]=new Square("black");
-					whiteTile=0;
-				}
-			}
-			if(whiteTile==0) {
-				whiteTile=1;
-			}
-			else if(whiteTile==1) {
-				whiteTile=0;
-			}
-		}
 	}
 }

@@ -2,12 +2,23 @@ package setup;
 
 public class Rook extends Piece {
 
+    /**
+     * Constructor for Rook
+     * @param color Color of the piece
+     */
     public Rook(String color) {
         super(color);
         type="rook";
         // TODO Auto-generated constructor stub
     }
 
+    /**
+     * If the move is valid
+     * @param start The starting position
+     * @param input The destination
+     * @param board The board
+     * @return True for valid, false for invalid
+     */
     @Override
     public boolean isValidMove(String start,String input, Board board) {
         // TODO Auto-generated method stub
@@ -49,6 +60,12 @@ public class Rook extends Piece {
         return true;
     }
 
+    /**
+     * Move the piece from the starting position to its destination
+     * @param start The starting position
+     * @param end The destination
+     * @param board The board
+     */
     @Override
     public void move(String start, String end, Board board) {
         // TODO Auto-generated method stub

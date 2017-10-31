@@ -1,12 +1,25 @@
 package setup;
 
 public class Pawn extends Piece{
+
+    /**
+     * Constructor for Pawn
+     * @param color Thw color of the piece
+     */
     public Pawn(String color){
         super(color);
         type="pawn";
         EnPassant=false;
     }
-    public boolean EnPassant;
+    private boolean EnPassant;
+
+    /**
+     * If the move is valid
+     * @param start The starting position
+     * @param input The destination
+     * @param board The board
+     * @return True for valid, false for invalid
+     */
     @Override
     public boolean isValidMove(String start, String input, Board board) {
     	 int start_file = start.charAt(0) - 'a';
@@ -92,6 +105,12 @@ public class Pawn extends Piece{
          return false;
     }
 
+    /**
+     * Move the piece from the starting position to its destination
+     * @param start The starting position
+     * @param end The destination
+     * @param board The board
+     */
     @Override
     public void move(String start ,String end, Board board) {
 		board.getSquare(end).setPiece(this);
@@ -111,9 +130,18 @@ public class Pawn extends Piece{
 			
 		}
     }
+
+    /**
+     * getEnpassant()
+     * @return EnPassant
+     */
     public boolean getEnpassant() {
     	return EnPassant;
     }
+
+    /**
+     * Set EnPassant to false
+     */
     public void setEnpassant() {
     	EnPassant=false;
     }

@@ -8,7 +8,6 @@ public abstract class Piece implements Cloneable {
 	String type;
 	boolean hasMoved;
 
-	
 	public Piece(String color) {
 		isWhite = color.equals("white");
 		type = null;
@@ -41,33 +40,7 @@ public abstract class Piece implements Cloneable {
 	public void moved() {
 		hasMoved = true;
 	}
-	
-	/**
-	 * testForCheck()
-	 * Checks whether a piece puts enemy king in check, returns true if king is in check
-	 * @return boolean
-	 * 
-	 * 
-	 */
-	public boolean testForCheck(char file, char rank, Square[][] board, String currentColor) {
 
-		
-		//TODO: finish this method
-
-		return false;
-	}
-	
-//	/**
-//	 * getEnemyKingLocation()
-//	 * Gets string of enemy kings location
-//	 * @return string
-//	 * 
-//	 * 
-//	 */
-//	public String getEnemyKingLocation(Square[][] board, String currentColor) {
-//		String location = "";
-//		return location;
-//	}
 	
 	/**
 	 * isValidMove
@@ -105,11 +78,7 @@ public abstract class Piece implements Cloneable {
 	{
 		return false;
 	}
-	
-	public Object clone() throws CloneNotSupportedException {
-	    return super.clone();
-	}
-	
+
 	/**
 	 * setHasMoved
 	 * @param moved Set true if moved
@@ -117,13 +86,35 @@ public abstract class Piece implements Cloneable {
 	public void setHasMoved(boolean moved) {
 		hasMoved = moved;
 	}
+
+    /**
+     * inCheck(board)
+     * @param board The board
+     * @return If in check
+     */
 	public boolean inCheck(Board board) {
 		return false;
 	}
+
+    /**
+     * If it is checkMate
+     * @param board The board
+     * @return If checkMate exists
+     */
 	public boolean checkMate(Board board) {
 		return false;
 	}
+
+    /**
+     * getKingPos
+     * @return The king's position
+     */
 	public String getKingPos() {
     	return "";
     }
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
 }

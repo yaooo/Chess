@@ -8,25 +8,37 @@ public class Square implements Cloneable {
 	private Piece occupyingPiece;
 	private boolean isBlack;
 
+	/**
+	 * Constructor of Square
+	 * @param color Color of the piece, should be "w" or "b"
+	 */
 	public Square(String color) {
 		this(null, color);
 	}
 
+	/**
+	 * @param piece The piece
+	 * @param color Color of the piece, should be "w" or "b"
+	 */
 	public Square(Piece piece, String color) {
 		occupyingPiece = piece;
 		isBlack = color.equals("black");
 	}
 
+	/**
+	 * Constructor of Square
+	 * @param piece The piece
+	 * @param isBlack If the piece is black
+	 */
 	public Square(Piece piece, boolean isBlack){
 		this.occupyingPiece = piece;
 		this.isBlack = isBlack;
 	}
 
 	/**
-	 * setPiece()
-	 * @param piece
-	 * @return void
 	 * Sets the occupying piece of the square to the passed parameter
+	 * @param piece The piece
+	 * @return void
 	 */
 	public void setPiece(Piece piece) {
 		occupyingPiece = piece;
@@ -48,8 +60,7 @@ public class Square implements Cloneable {
 	 * @return String
 	 * Returns class type of the piece occupying the instance of the square on which this method is invoked
 	 */
-	public String getPieceType()
-	{
+	public String getPieceType() {
 		if(occupyingPiece==null) {
 			return null;
 		}
@@ -71,7 +82,6 @@ public class Square implements Cloneable {
 				return "";
 		}
 	}
-
 
 	/**
 	 * getPieceColor()

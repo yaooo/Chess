@@ -28,16 +28,16 @@ public class Chess {
 				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
 				}
-				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
+				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn) {
 					System.out.println("illegal move,try again");
 				}
-				else if(b.getSquare(parts[0]).getPieceColor().equals("b")&& whiteTurn==true) {
+				else if(b.getSquare(parts[0]).getPieceColor().equals("b")&& whiteTurn) {
 					System.out.println("illegal move,try again");
 				}
 				else if(b.getSquare(parts[0]).getPiece().isValidMove(parts[0], parts[1], b)) {
 					b.getSquare(parts[0]).getPiece().move(parts[0],parts[1],b);
 					if (b.getSquare(parts[1]).getPieceType().equals("K")){
-						if(b.getSquare(parts[1]).getPiece().isWhite()==true) {
+						if(b.getSquare(parts[1]).getPiece().isWhite()) {
 							whiteKing=b.getSquare(parts[1]);
 						}
 						else {

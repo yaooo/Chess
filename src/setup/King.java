@@ -1,7 +1,12 @@
 package setup;
 
 public class King extends Piece {
+    public String kingPos;
 
+    /**
+     * Constructor for king
+     * @param color The color of the piece
+     */
     public King(String color) {
         super(color);
         type="king";
@@ -12,7 +17,14 @@ public class King extends Piece {
         	kingPos="e8";
         }
     }
-    public String kingPos;
+
+    /**
+     * If the move is valid
+     * @param start The starting position
+     * @param input The destination
+     * @param board The board
+     * @return True for valid, false for invalid
+     */
     @Override
     public boolean isValidMove(String start,String input, Board board) {
 
@@ -105,6 +117,12 @@ public class King extends Piece {
         return true;
     }
 
+    /**
+     * Move the King from one place to other
+     * @param startKingPos King's starting position
+     * @param endKingPos King's destination
+     * @param board The board
+     */
     @Override
     public void move(String startKingPos, String endKingPos, Board board) {
         int start_file = startKingPos.charAt(0) - 'a';
@@ -169,8 +187,12 @@ public class King extends Piece {
         return b;
     }
 
-    
-    
+
+    /**
+     * If the King is checked
+     * @param board The board
+     * @return True if King is checked
+     */
     public boolean inCheck(Board board) {
     	Square b[][]=board.getBoard();
     	boolean check=false;
@@ -181,8 +203,6 @@ public class King extends Piece {
     				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
     					check=true;
     				}
-    				
-    				
     			}
     			else if(b[i][j].getPiece()!=null && !(this.isWhite()) && b[i][j].getPiece().isWhite()) {
     				String h = reverseN(i,j);
@@ -196,7 +216,12 @@ public class King extends Piece {
     	}
     	return check;
     }
-    
+
+    /**
+     * If the King is checkmated
+     * @param board The board
+     * @return True if King is checkmated
+     */
     public boolean checkMate(Board board) {
     	Square b[][]=board.getBoard();
     	int start_file = kingPos.charAt(0) - 'a';
@@ -228,7 +253,13 @@ public class King extends Piece {
     	}
     	return cMate;
     }
-    
+
+    /**
+     * Helper method that return the location in the type of String
+     * @param k rank coordinate
+     * @param q file coordinate
+     * @return
+     */
     private String reverseN(int k, int q) {
     	String rank="";
     	String file="";
@@ -290,8 +321,12 @@ public class King extends Piece {
 			file="-1";
 		}
 		return file+rank;
-    	
     }
+
+    /**
+     * getKingPos()
+     * @return King's position
+     */
     public String getKingPos() {
     	return kingPos;
     }
