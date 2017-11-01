@@ -127,7 +127,9 @@ public abstract class Piece implements Cloneable {
 	public String getKingPos() {
     	return "";
     }
-
+	public boolean stalemate(Board board) {
+		return false;
+	}
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }

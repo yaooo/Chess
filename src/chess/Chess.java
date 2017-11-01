@@ -24,9 +24,16 @@ public class Chess {
 			String parts[]=input.split(" ");
 			Pawn PassantTrack=null;
 			while(!(parts[0].equals("resign")) &&  !(whiteKing.getPiece().checkMate(b)) &&  !(blackKing.getPiece().checkMate(b))){
-
-
-			    if(parts.length==3 && parts[2].equals("draw?")) {
+				if(whiteKing.getPiece().stalemate(b) && whiteTurn) {
+					draw=true;
+					break;
+				}
+				else if(blackKing.getPiece().stalemate(b) && !(whiteTurn)) {
+					draw=true;
+					break;
+				}
+				
+				if(parts.length==3 && parts[2].equals("draw?")) {
 					draw=true;
 				}
 
@@ -40,6 +47,9 @@ public class Chess {
 				}
 				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
+				}
+				else if(b.getSquare(parts[0]).getPiece()==null) {
+					System.out.println("illegal move try again");
 				}
 				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
 					System.out.println("illegal move,try again");
@@ -96,7 +106,7 @@ public class Chess {
 				parts=input.split(" ");
 			}
 			if(draw==true) {
-				System.out.println("draw");
+				//System.out.println("draw");
 			}
 			else if(parts[0].equals("resign")){
 			    	if(whiteTurn)

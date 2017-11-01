@@ -208,7 +208,7 @@ public class King extends Piece {
     					check=true;
     				}
     			}
-    			else if(b[i][j].getPiece()!=null && !(this.isWhite()) && b[i][j].getPiece().isWhite()) {
+    			else if(b[i][j].getPiece()!=null && !(this.isWhite()) && b[i][j].getPiece().isWhite() && b[i][j].getPiece()!=this) {
     				String h = reverseN(i,j);
     				if(board.getSquare(h).getPiece().isValidMove(h, kingPos, board)) {
     					check=true;
@@ -333,5 +333,54 @@ public class King extends Piece {
      */
     public String getKingPos() {
     	return kingPos;
+    }
+
+    public boolean stalemate(Board board) {
+		if(this.onlyPiece(board) && !(this.inCheck(board))){
+	    		Square[][] b= board.getBoard();
+	    		int start_file = kingPos.charAt(0) - 'a';
+	        	int start_rank= Movement.getRank(Integer.parseInt(kingPos.charAt(1)+""));
+	        	boolean sMate=true;
+	        	String oldkingPos=kingPos;
+	        	//System.out.println("from position:e3-----------");
+		        for(int i=start_rank-1;i<=start_rank+1;i++){
+		       		for(int j=start_file-1;j<=start_file+1;j++) {
+		       			if((i>7 || i<0) || (j>7 ||j<0)){
+		       			}
+		       			else if(i==start_rank && j==start_file) {
+		       			}
+		   	    		else if(b[i][j].getPiece()==null) {
+		   	    			b[i][j].setPiece(this);
+		   	    			b[start_rank][start_file].setPiece(null);
+		   	    			board.setBoard(b);
+	    	    			String h=reverseN(i,j);
+	    	    			this.kingPos=h;
+	    	    			sMate=(sMate && board.getSquare(h).getPiece().inCheck(board));
+		    	    		b[start_rank][start_file].setPiece(this);
+		    	   			b[i][j].setPiece(null);
+		    	   			this.kingPos=oldkingPos;
+		    	   			board.setBoard(b);
+		    	   		}
+		        	}
+		        }	
+	        return sMate;
+	    }
+		else {
+			return false;
+		}
+    }
+    private boolean onlyPiece(Board board) {
+    	Square[][] b= board.getBoard();
+    	for(int i=0; i<b.length; i++){
+    		for(int j=0; j<b[i].length; j++) {
+    			if(b[i][j].getPiece()!=null && this.isWhite && b[i][j].getPieceColor().equals("w") && b[i][j].getPiece()!=this){
+    				return false;
+    			}
+    			else if(b[i][j].getPiece()!=null && !(this.isWhite) && b[i][j].getPieceColor().equals("b") && b[i][j].getPiece()!=this){
+    				return false;
+    			}
+    		}
+    	}
+    	return true;
     }
 }
