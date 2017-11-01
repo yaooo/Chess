@@ -19,6 +19,8 @@ public class Chess {
 			b.printBoard();
 			String input;
 			boolean whiteTurn=true;
+			boolean blackCap=false;
+			boolean whiteCap=false;
 			System.out.print("White player make your move:");
 			input=scn.nextLine();
 			String parts[]=input.split(" ");
@@ -60,11 +62,19 @@ public class Chess {
 				else if(b.getSquare(parts[0]).getPiece().isValidMove(parts[0], parts[1], b)) {
 					b.getSquare(parts[0]).getPiece().move(parts[0],parts[1],b);
 					if (b.getSquare(parts[1]).getPieceType().equals("K")){
-						if(b.getSquare(parts[1]).getPiece().isWhite()==true) {
+						if(b.getSquare(parts[1]).getPiece().isWhite()==true && whiteTurn) {
 							whiteKing=b.getSquare(parts[1]);
 						}
-						else {
+						else if(b.getSquare(parts[1]).getPiece().isWhite()==false && !(whiteTurn)) {
 							blackKing=b.getSquare(parts[1]);
+						}
+						else if(b.getSquare(parts[1]).getPiece().isWhite()==false && whiteTurn){
+							whiteCap=true;
+							break;
+						}
+						else if(b.getSquare(parts[1]).getPiece().isWhite()==true && !(whiteTurn)){
+							blackCap=true;
+							break;
 						}
 							
 					}
@@ -105,8 +115,14 @@ public class Chess {
 				input=scn.nextLine();
 				parts=input.split(" ");
 			}
-			if(draw==true) {
-				//System.out.println("draw");
+			if(whiteCap==true) {
+				System.out.println("White wins");
+			}
+			else if(blackCap==true) {
+				System.out.println("Black wins");
+			}
+			else if(draw==true) {
+				System.out.println("draw");
 			}
 			else if(parts[0].equals("resign")){
 			    	if(whiteTurn)
