@@ -46,18 +46,43 @@ public class Chess {
                 }
 				if(!draw && parts.length!=2) {
 					System.out.println("illegal move,try again");
+					if(whiteTurn){
+					    System.out.print("White player make your move:");
+                    }else{
+                        System.out.print("Black player make your move:");
+                    }
 				}
 				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
+                    if(whiteTurn){
+                        System.out.print("White player make your move:");
+                    }else{
+                        System.out.print("Black player make your move:");
+                    }
 				}
 				else if(b.getSquare(parts[0]).getPiece()==null) {
 					System.out.println("illegal move try again");
+                    if(whiteTurn){
+                        System.out.print("White player make your move:");
+                    }else{
+                        System.out.print("Black player make your move:");
+                    }
 				}
 				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
 					System.out.println("illegal move,try again");
+                    if(whiteTurn){
+                        System.out.print("White player make your move:");
+                    }else{
+                        System.out.print("Black player make your move:");
+                    }
 				}
 				else if(b.getSquare(parts[0]).getPieceColor().equals("b")&& whiteTurn==true) {
 					System.out.println("illegal move,try again");
+                    if(whiteTurn){
+                        System.out.print("White player make your move:");
+                    }else{
+                        System.out.print("Black player make your move:");
+                    }
 				}
 				else if(b.getSquare(parts[0]).getPiece().isValidMove(parts[0], parts[1], b)) {
 					b.getSquare(parts[0]).getPiece().move(parts[0],parts[1],b);
@@ -109,6 +134,11 @@ public class Chess {
 				}
 				else {
 					System.out.println("illegal move,try again");
+                    if(whiteTurn){
+                        System.out.print("White player make your move:");
+                    }else{
+                        System.out.print("Black player make your move:");
+                    }
 				}
 				
 

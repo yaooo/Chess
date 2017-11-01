@@ -2,6 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b6db3a-4a2c-463c-be08-ebb03d2edeb6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/allclasses-frame.html" afterPath="$PROJECT_DIR$/docs/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/docs/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/chess/Chess.html" afterPath="$PROJECT_DIR$/docs/chess/Chess.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/chess/package-frame.html" afterPath="$PROJECT_DIR$/docs/chess/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/chess/package-summary.html" afterPath="$PROJECT_DIR$/docs/chess/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/chess/package-tree.html" afterPath="$PROJECT_DIR$/docs/chess/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/constant-values.html" afterPath="$PROJECT_DIR$/docs/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/deprecated-list.html" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/help-doc.html" afterPath="$PROJECT_DIR$/docs/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-12.html" afterPath="$PROJECT_DIR$/docs/index-files/index-12.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/overview-frame.html" afterPath="$PROJECT_DIR$/docs/overview-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/overview-summary.html" afterPath="$PROJECT_DIR$/docs/overview-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/overview-tree.html" afterPath="$PROJECT_DIR$/docs/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Bishop.html" afterPath="$PROJECT_DIR$/docs/setup/Bishop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Board.html" afterPath="$PROJECT_DIR$/docs/setup/Board.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/King.html" afterPath="$PROJECT_DIR$/docs/setup/King.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Knight.html" afterPath="$PROJECT_DIR$/docs/setup/Knight.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Movement.html" afterPath="$PROJECT_DIR$/docs/setup/Movement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Pawn.html" afterPath="$PROJECT_DIR$/docs/setup/Pawn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Piece.html" afterPath="$PROJECT_DIR$/docs/setup/Piece.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Queen.html" afterPath="$PROJECT_DIR$/docs/setup/Queen.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Rook.html" afterPath="$PROJECT_DIR$/docs/setup/Rook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/Square.html" afterPath="$PROJECT_DIR$/docs/setup/Square.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/class-use/Rook.html" afterPath="$PROJECT_DIR$/docs/setup/class-use/Rook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/package-frame.html" afterPath="$PROJECT_DIR$/docs/setup/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/package-summary.html" afterPath="$PROJECT_DIR$/docs/setup/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/package-tree.html" afterPath="$PROJECT_DIR$/docs/setup/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/setup/package-use.html" afterPath="$PROJECT_DIR$/docs/setup/package-use.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chess/Chess.java" afterPath="$PROJECT_DIR$/src/chess/Chess.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -17,137 +58,10 @@
       <file leaf-file-name="Chess.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chess/Chess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="4031">
+              <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
               <folding>
-                <marker date="1509547417096" expanded="true" signature="3081:3267" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="method#initBoard#0;class#Board#0" expanded="false" />
-                <element signature="method#printBoard#0;class#Board#0" expanded="false" />
-                <element signature="method#getSquare#0;class#Board#0" expanded="false" />
-                <element signature="method#getX#0;class#Board#0" expanded="false" />
-                <element signature="method#getY#0;class#Board#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="King.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/King.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Knight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Knight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1682">
-              <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="12" column="97" lean-forward="false" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
-              <folding>
-                <element signature="docComment;method#hasPiecesInBetween#0;class#Movement#0" expanded="false" />
-                <element signature="method#hasPiecesInBetween#0;class#Movement#0" expanded="false" />
-                <element signature="docComment;method#getRank#0;class#Movement#0" expanded="false" />
-                <element signature="method#getRank#0;class#Movement#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pawn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Pawn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
-                <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
-                <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
-                <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Queen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Queen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-              <folding>
-                <element signature="docComment;method#Queen#0;class#Queen#0" expanded="false" />
-                <element signature="method#Queen#0;class#Queen#0" expanded="false" />
-                <element signature="docComment;method#isValidMove#0;class#Queen#0" expanded="false" />
-                <element signature="method#isValidMove#0;class#Queen#0" expanded="false" />
-                <element signature="docComment;method#move#0;class#Queen#0" expanded="false" />
-                <element signature="method#move#0;class#Queen#0" expanded="false" />
-                <element signature="docComment;method#surroundCheck#0;class#Queen#0" expanded="false" />
-                <element signature="method#surroundCheck#0;class#Queen#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Rook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="67" column="7" lean-forward="false" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-              <folding>
-                <element signature="docComment;method#Rook#0;class#Rook#0" expanded="false" />
-                <element signature="method#Rook#0;class#Rook#0" expanded="false" />
-                <element signature="docComment;method#isValidMove#0;class#Rook#0" expanded="false" />
-                <element signature="method#isValidMove#0;class#Rook#0" expanded="false" />
-                <element signature="docComment;method#move#0;class#Rook#0" expanded="false" />
-                <element signature="method#move#0;class#Rook#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setup/Square.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-              <folding>
-                <element signature="docComment;method#Square#0;class#Square#0" expanded="false" />
-                <element signature="docComment;method#Square#1;class#Square#0" expanded="false" />
-                <element signature="method#Square#1;class#Square#0" expanded="false" />
-                <element signature="docComment;method#Square#2;class#Square#0" expanded="false" />
-                <element signature="method#Square#2;class#Square#0" expanded="false" />
-                <element signature="docComment;method#setPiece#0;class#Square#0" expanded="false" />
-                <element signature="docComment;method#getPiece#0;class#Square#0" expanded="false" />
-                <element signature="docComment;method#getPieceType#0;class#Square#0" expanded="false" />
-                <element signature="method#getPieceType#0;class#Square#0" expanded="false" />
-                <element signature="docComment;method#getPieceColor#0;class#Square#0" expanded="false" />
-                <element signature="docComment;method#isSquareBlack#0;class#Square#0" expanded="false" />
-                <element signature="docComment;method#toString#0;class#Square#0" expanded="false" />
-                <element signature="method#clone#0;class#Square#0" expanded="false" />
-                <marker date="1509545912547" expanded="false" signature="1177:1330" ph="/**...*/" />
+                <marker date="1509568259706" expanded="true" signature="5273:5459" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -166,6 +80,7 @@
       <find>resign</find>
       <find>checkmate</find>
       <find>hello9</find>
+      <find>promotion</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,6 +130,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,7 +164,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,9 +315,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7553879" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1858217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19119227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -413,7 +329,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -426,17 +341,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/setup/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="method#isValidMove#0;class#Bishop#0" expanded="false" />
-            <element signature="method#move#0;class#Bishop#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -455,7 +359,7 @@
         <state relative-caret-position="330">
           <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
-            <marker date="1509547417096" expanded="true" signature="3081:3267" ph="{...}" />
+            <marker date="1509568259706" expanded="true" signature="5273:5459" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -468,6 +372,7 @@
             <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
           </folding>
         </state>
@@ -541,7 +446,7 @@
         <state relative-caret-position="264">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
-            <marker date="1509547417096" expanded="true" signature="3081:3267" ph="{...}" />
+            <marker date="1509568259706" expanded="true" signature="5273:5459" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -609,6 +514,7 @@
             <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
           </folding>
         </state>
@@ -655,7 +561,7 @@
         <state relative-caret-position="352">
           <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
-            <marker date="1509547417096" expanded="true" signature="3081:3267" ph="{...}" />
+            <marker date="1509568259706" expanded="true" signature="5273:5459" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -677,10 +583,6 @@
           <caret line="160" column="37" lean-forward="true" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
           <folding>
             <element signature="method#initBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#printBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#getSquare#0;class#Board#0" expanded="false" />
-            <element signature="method#getX#0;class#Board#0" expanded="false" />
-            <element signature="method#getY#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -708,6 +610,7 @@
             <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
           </folding>
         </state>
@@ -766,10 +669,6 @@
           <caret line="160" column="37" lean-forward="true" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
           <folding>
             <element signature="method#initBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#printBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#getSquare#0;class#Board#0" expanded="false" />
-            <element signature="method#getX#0;class#Board#0" expanded="false" />
-            <element signature="method#getY#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,6 +696,7 @@
             <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
           </folding>
         </state>
@@ -855,10 +755,6 @@
           <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
             <element signature="method#initBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#printBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#getSquare#0;class#Board#0" expanded="false" />
-            <element signature="method#getX#0;class#Board#0" expanded="false" />
-            <element signature="method#getY#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -983,6 +879,7 @@
             <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
           </folding>
         </state>
@@ -994,21 +891,60 @@
           <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="method#initBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#printBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#getSquare#0;class#Board#0" expanded="false" />
-            <element signature="method#getX#0;class#Board#0" expanded="false" />
-            <element signature="method#getY#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Bishop.java">
+    <entry file="file://$PROJECT_DIR$/src/setup/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="812">
+          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;method#Square#0;class#Square#0" expanded="false" />
+            <element signature="docComment;method#Square#1;class#Square#0" expanded="false" />
+            <element signature="method#Square#1;class#Square#0" expanded="false" />
+            <element signature="docComment;method#Square#2;class#Square#0" expanded="false" />
+            <element signature="method#Square#2;class#Square#0" expanded="false" />
+            <element signature="docComment;method#setPiece#0;class#Square#0" expanded="false" />
+            <element signature="docComment;method#getPiece#0;class#Square#0" expanded="false" />
+            <element signature="docComment;method#getPieceType#0;class#Square#0" expanded="false" />
+            <element signature="method#getPieceType#0;class#Square#0" expanded="false" />
+            <element signature="docComment;method#getPieceColor#0;class#Square#0" expanded="false" />
+            <element signature="docComment;method#isSquareBlack#0;class#Square#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Square#0" expanded="false" />
+            <element signature="method#clone#0;class#Square#0" expanded="false" />
+            <marker date="1509545912547" expanded="false" signature="1177:1330" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup/Rook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
           <caret line="67" column="7" lean-forward="false" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
           <folding>
-            <element signature="method#isValidMove#0;class#Bishop#0" expanded="false" />
-            <element signature="method#move#0;class#Bishop#0" expanded="false" />
+            <element signature="docComment;method#Rook#0;class#Rook#0" expanded="false" />
+            <element signature="method#Rook#0;class#Rook#0" expanded="false" />
+            <element signature="docComment;method#isValidMove#0;class#Rook#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Rook#0" expanded="false" />
+            <element signature="docComment;method#move#0;class#Rook#0" expanded="false" />
+            <element signature="method#move#0;class#Rook#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1034,49 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="method#initBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#printBoard#0;class#Board#0" expanded="false" />
-            <element signature="method#getSquare#0;class#Board#0" expanded="false" />
-            <element signature="method#getX#0;class#Board#0" expanded="false" />
-            <element signature="method#getY#0;class#Board#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/King.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Knight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1682">
-          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="12" column="97" lean-forward="false" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
-          <folding>
-            <element signature="docComment;method#hasPiecesInBetween#0;class#Movement#0" expanded="false" />
-            <element signature="method#hasPiecesInBetween#0;class#Movement#0" expanded="false" />
-            <element signature="docComment;method#getRank#0;class#Movement#0" expanded="false" />
-            <element signature="method#getRank#0;class#Movement#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/setup/Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -1094,63 +987,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Rook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="67" column="7" lean-forward="false" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-          <folding>
-            <element signature="docComment;method#Rook#0;class#Rook#0" expanded="false" />
-            <element signature="method#Rook#0;class#Rook#0" expanded="false" />
-            <element signature="docComment;method#isValidMove#0;class#Rook#0" expanded="false" />
-            <element signature="method#isValidMove#0;class#Rook#0" expanded="false" />
-            <element signature="docComment;method#move#0;class#Rook#0" expanded="false" />
-            <element signature="method#move#0;class#Rook#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/setup/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="536">
+          <caret line="137" column="23" lean-forward="true" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
           <folding>
             <element signature="docComment;method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="method#Pawn#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#isValidMove#0;class#Pawn#0" expanded="false" />
+            <element signature="method#isValidMove#0;class#Pawn#0" expanded="false" />
             <element signature="docComment;method#setEnpassant#0;class#Pawn#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup/Square.java">
+    <entry file="file://$PROJECT_DIR$/src/setup/Movement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="145">
+          <caret line="12" column="97" lean-forward="false" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
           <folding>
-            <element signature="docComment;method#Square#0;class#Square#0" expanded="false" />
-            <element signature="docComment;method#Square#1;class#Square#0" expanded="false" />
-            <element signature="method#Square#1;class#Square#0" expanded="false" />
-            <element signature="docComment;method#Square#2;class#Square#0" expanded="false" />
-            <element signature="method#Square#2;class#Square#0" expanded="false" />
-            <element signature="docComment;method#setPiece#0;class#Square#0" expanded="false" />
-            <element signature="docComment;method#getPiece#0;class#Square#0" expanded="false" />
-            <element signature="docComment;method#getPieceType#0;class#Square#0" expanded="false" />
-            <element signature="method#getPieceType#0;class#Square#0" expanded="false" />
-            <element signature="docComment;method#getPieceColor#0;class#Square#0" expanded="false" />
-            <element signature="docComment;method#isSquareBlack#0;class#Square#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Square#0" expanded="false" />
-            <element signature="method#clone#0;class#Square#0" expanded="false" />
-            <marker date="1509545912547" expanded="false" signature="1177:1330" ph="/**...*/" />
+            <element signature="docComment;method#hasPiecesInBetween#0;class#Movement#0" expanded="false" />
+            <element signature="method#hasPiecesInBetween#0;class#Movement#0" expanded="false" />
+            <element signature="docComment;method#getRank#0;class#Movement#0" expanded="false" />
+            <element signature="method#getRank#0;class#Movement#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup/Bishop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="67" column="7" lean-forward="false" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+          <folding>
+            <element signature="method#isValidMove#0;class#Bishop#0" expanded="false" />
+            <element signature="method#move#0;class#Bishop#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setup/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="method#initBoard#0;class#Board#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chess/Chess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="4031">
+          <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
           <folding>
-            <marker date="1509547417096" expanded="true" signature="3081:3267" ph="{...}" />
+            <marker date="1509568259706" expanded="true" signature="5273:5459" ph="{...}" />
           </folding>
         </state>
       </provider>
