@@ -35,10 +35,10 @@ public class Chess {
 				}else{
 			        draw = false;
                 }
-				/*if(draw==false && parts.length!=2) {
+				if(!draw && parts.length!=2) {
 					System.out.println("illegal move,try again");
-				}*/
-				if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
+				}
+				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
 				}
 				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
