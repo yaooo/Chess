@@ -91,12 +91,10 @@ public class King extends Piece {
             return false;
 
         if(start_file < 0 || start_file > 7 || dest_file < 0 || dest_file > 7) {
-        	System.out.println("hello");
         	return false;
         }
 
         if(dest_rank < 0 || start_rank > 7 || dest_rank < 0 || dest_rank > 7) {
-        	System.out.println("hello2");
         	return false;
         }
 
@@ -108,12 +106,10 @@ public class King extends Piece {
             // King cannot eat his own people
             if (startPos.getPieceColor().equals("w")) {
                 if (endPos.getPieceColor().equals("w")) {
-                	System.out.println("hello3");
                 	return false;
                 }
             } else if (startPos.getPieceColor().equals("b")) {
                 if (endPos.getPieceColor().equals("b")){
-                	System.out.println("hello4");
                     return false;
                 }
             }
@@ -145,7 +141,7 @@ public class King extends Piece {
             }
 
         }else{
-            System.out.println("Non-valid move");
+           // System.out.println("Non-valid move");
         }
         kingPos=endKingPos;
     }
