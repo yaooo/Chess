@@ -8,7 +8,9 @@ import java.util.Scanner;
  */
 
 public class Chess {
-	public static void main(String[] args) {
+    private static boolean draw =false;
+
+    public static void main(String[] args) {
 			Board b = new Board();
 			Scanner scn=new Scanner(System.in);
 			b.initBoard();
@@ -16,24 +18,27 @@ public class Chess {
 			Square blackKing=b.getSquare("e8");
 			b.printBoard();
 			String input;
-			boolean draw=false;
 			boolean whiteTurn=true;
 			System.out.print("White player make your move:");
 			input=scn.nextLine();
 			String parts[]=input.split(" ");
 			Pawn PassantTrack=null;
 			while(!(parts[0].equals("resign")) &&  !(whiteKing.getPiece().checkMate(b)) &&  !(blackKing.getPiece().checkMate(b))){
-				if(parts.length==3 && parts[2].equals("draw?")) {
+
+
+			    if(parts.length==3 && parts[2].equals("draw?")) {
 					draw=true;
 				}
-				
-				if(draw==true && parts.length==1 && parts[0].equals("draw")) {
+
+                else if(draw && parts.length==1 && parts[0].equals("draw")) {
 					break;
-				}
-				else if(draw==false && parts.length!=2) {
+				}else{
+			        draw = false;
+                }
+				/*if(draw==false && parts.length!=2) {
 					System.out.println("illegal move,try again");
-				}
-				else if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
+				}*/
+				if(b.getSquare(parts[0])==null || b.getSquare(parts[1])==null) {
 					System.out.println("illegal move,try again");
 				}
 				else if(b.getSquare(parts[0]).getPieceColor().equals("w") && whiteTurn==false) {
@@ -86,9 +91,7 @@ public class Chess {
 					System.out.println("illegal move,try again");
 				}
 				
-				if(draw==true) {
-					draw=false;
-				}
+
 				input=scn.nextLine();
 				parts=input.split(" ");
 			}
