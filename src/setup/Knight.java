@@ -41,7 +41,7 @@ public class Knight extends Piece {
             return false;
 
         // If it does not move as a "L" shape
-        if(Math.abs(diff_file- diff_rank) != 1 && diff_file+diff_rank != 3)
+        if(Math.abs(diff_file- diff_rank) != 1 || diff_file+diff_rank != 3)
             return false;
 
         Piece dest = board.getSquare(input).getPiece();
